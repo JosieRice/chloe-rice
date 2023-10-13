@@ -7,7 +7,7 @@ export function Hero() {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <Image
           alt="Chloë Avatar"
-          className="max-w-sm shadow-2xl rounded-full"
+          className="max-w-sm shadow-2xl mask mask-hexagon"
           height={200}
           src="/hero-avatar.jpg"
           width={200}
