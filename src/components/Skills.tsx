@@ -14,6 +14,10 @@ export function Skills() {
         <SkillBadge src="/depIcons/nodejs.png" title="Node.js" />
         <SkillBadge src="/depIcons/npm.png" title="npm" />
         <SkillBadge src="/depIcons/webpack.png" title="webpack" />
+        <SkillBadge
+          src="/depIcons/module-federation.png"
+          title="Module Federation"
+        />
         <SkillBadge src="/depIcons/babel.png" title="babel" />
         <SkillBadge src="/depIcons/jest.png" title="jest" />
         <SkillBadge src="/depIcons/backbone.png" title="backbone" />

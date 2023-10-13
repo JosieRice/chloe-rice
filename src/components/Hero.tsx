@@ -10,6 +10,7 @@ export function Hero() {
           className="max-w-sm shadow-2xl mask mask-hexagon"
           height={200}
           src="/hero-avatar.jpg"
+          priority
           width={200}
         />
         <div>
