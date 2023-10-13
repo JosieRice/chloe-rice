@@ -26,9 +26,31 @@ export function SkillBadge({ src, svg, title }: Props) {
   );
 }
 
-type SVG = "bitbucket" | "git" | "github" | "javascript" | "sql" | "typescript";
+type SVG =
+  | "asana"
+  | "bitbucket"
+  | "git"
+  | "github"
+  | "javascript"
+  | "jira"
+  | "sql"
+  | "typescript";
 
 const skillsSVGs: Record<SVG, JSX.Element> = {
+  asana: (
+    <svg
+      width={80}
+      height={80}
+      viewBox="0 0 36 35"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M25.8284 8.82975C25.8284 13.1521 22.3237 16.6595 18.0014 16.6595C13.6762 16.6595 10.1716 13.1549 10.1716 8.82975C10.1716 4.50464 13.6762 1 18.0014 1C22.3237 1 25.8284 4.50464 25.8284 8.82975ZM7.82975 18.6156C3.50736 18.6156 0 22.1202 0 26.4426C0 30.765 3.50464 34.2724 7.82975 34.2724C12.1549 34.2724 15.6595 30.7677 15.6595 26.4426C15.6595 22.1202 12.1549 18.6156 7.82975 18.6156ZM28.1703 18.6156C23.8451 18.6156 20.3405 22.1202 20.3405 26.4453C20.3405 30.7704 23.8451 34.2751 28.1703 34.2751C32.4926 34.2751 36 30.7704 36 26.4453C36 22.1202 32.4954 18.6156 28.1703 18.6156Z"
+        fill="#F06A6A"
+      />
+    </svg>
+  ),
   bitbucket: (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -119,6 +141,52 @@ const skillsSVGs: Record<SVG, JSX.Element> = {
     >
       <rect width="512" height="512" rx="15%" fill="#f7df1e" />
       <path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z" />
+    </svg>
+  ),
+  jira: (
+    <svg
+      width={80}
+      height={80}
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M15.808 7.552L8.69.667 8 0 2.642 5.183l-2.45 2.37A.623.623 0 000 8c0 .168.069.329.192.448l4.895 4.735L8 16l5.358-5.183.083-.08 2.367-2.29A.623.623 0 0016 8a.623.623 0 00-.192-.448zM8 10.365L5.554 8 8 5.635 10.446 8 8 10.365z"
+        fill="#2684FF"
+      />
+      <path
+        d="M8 5.634A3.918 3.918 0 016.794 2.83 3.917 3.917 0 017.983.018L2.63 5.193 5.543 8.01 8 5.634z"
+        fill="url(#paint0_linear)"
+      />
+      <path
+        d="M10.452 7.994L8 10.365c.383.37.686.81.893 1.293a3.87 3.87 0 010 3.05c-.207.483-.51.922-.893 1.292l5.365-5.189-2.913-2.817z"
+        fill="url(#paint1_linear)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear"
+          x1="7.563"
+          y1="3.241"
+          x2="4.262"
+          y2="6.654"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset=".18" stop-color="#0052CC" />
+          <stop offset="1" stop-color="#2684FF" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear"
+          x1="216.055"
+          y1="490.616"
+          x2="331.647"
+          y2="413.158"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset=".18" stop-color="#0052CC" />
+          <stop offset="1" stop-color="#2684FF" />
+        </linearGradient>
+      </defs>
     </svg>
   ),
   sql: (
