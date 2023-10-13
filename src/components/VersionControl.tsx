@@ -7,7 +7,7 @@ export function VersionControl() {
       <div className="flex flex-wrap gap-8 justify-center mt-8">
         <SkillBadge src="/depIcons/git.png" title="git" />
         <SkillBadge src="/depIcons/github.png" title="GitHub" />
-        <SkillBadge title="Bitbucket" />
+        <SkillBadge svg="bitbucket" title="Bitbucket" />
       </div>
     </div>
   );
