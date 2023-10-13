@@ -25,8 +25,6 @@ export function Skills() {
         <SkillBadge src="/depIcons/mui.png" title="mui" />
         <SkillBadge src="/depIcons/googlemapsapi.png" title="Google Maps API" />
         <SkillBadge src="/depIcons/less.png" title="LESS preprocesor" />
-        <SkillBadge src="/depIcons/git.png" title="git" />
-        <SkillBadge src="/depIcons/github.png" title="GitHub" />
       </div>
     </div>
   );
