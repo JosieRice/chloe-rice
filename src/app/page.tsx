@@ -1,6 +1,10 @@
+import { Backend } from "@/components/Backend";
+import { BuildTools } from "@/components/BuildTools";
 import { Hero } from "@/components/Hero";
 import { Languages } from "@/components/Languages";
-import { Skills } from "@/components/Skills";
+import { Libraries } from "@/components/Libraries";
+import { StyleAndLayout } from "@/components/StyleAndLayout";
+import { Testing } from "@/components/Testing";
 import { VersionControl } from "@/components/VersionControl";
 import { WorkTracking } from "@/components/WorkTracking";
 
@@ -9,9 +13,13 @@ export default function Home() {
     <main>
       <Hero />
       <Languages />
+      <StyleAndLayout />
+      <Libraries />
+      <BuildTools />
+      <Testing />
       <VersionControl />
+      <Backend />
       <WorkTracking />
-      <Skills />
     </main>
   );
 }
