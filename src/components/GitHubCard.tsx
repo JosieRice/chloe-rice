@@ -32,11 +32,11 @@ export function GitHubCard({ htmlUrl, name, privateBool, createdAt, description,
     );
 }
 
-const getLanguageDot = (language: string) => {
+const getLanguageDot = (language: string | null) => {
     let color;
-    if (language.toLowerCase() === "javascript") color = "#f1e05a";
-    if (language.toLowerCase() === "typescript") color = "#3178c6";
-    if (language.toLowerCase() === "css") color = "#563d7c";
+    if (language?.toLowerCase() === "javascript") color = "#f1e05a";
+    if (language?.toLowerCase() === "typescript") color = "#3178c6";
+    if (language?.toLowerCase() === "css") color = "#563d7c";
 
     if (color)
         return (
