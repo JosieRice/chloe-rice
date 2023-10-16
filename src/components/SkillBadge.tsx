@@ -21,7 +21,7 @@ type Props = PropsForImage | PropsForSVG;
 export function SkillBadge({ src, svg, title }: Props) {
     return (
         <div className="tooltip" data-tip={title}>
-            {src && <Image alt={title} src={src} width={80} height={80} />}
+            {src && <Image alt={title} height={80} src={src} width={80} />}
             {svg && iconDictionary[svg]}
         </div>
     );

@@ -1,4 +1,5 @@
 import { GitHubCard } from "@/components/GitHubCard";
+
 import { getGitHubRepos } from "./actions";
 
 export default async function Portfolio() {
@@ -11,10 +12,10 @@ export default async function Portfolio() {
             <div className="flex flex-wrap gap-8 justify-center">
                 {repos?.map((repo: any, i: number) => (
                     <GitHubCard
-                        key={repo.id}
                         createdAt={repo.created_at}
                         description={repo.description}
                         htmlUrl={repo.html_url}
+                        key={repo.id}
                         language={repo.language}
                         name={repo.name}
                         privateBool={repo.private}

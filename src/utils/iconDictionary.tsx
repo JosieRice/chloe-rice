@@ -32,8 +32,8 @@ export type SVG =
     | "redux"
     | "sass"
     | "semanticUI"
-    | "styledComponents"
     | "sql"
+    | "styledComponents"
     | "tailwindcss"
     | "typescript"
     | "webpack"
@@ -41,7 +41,7 @@ export type SVG =
 
 export const iconDictionary: Record<SVG, JSX.Element> = {
     asana: (
-        <svg width={80} height={80} viewBox="0 0 36 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="none" height={80} viewBox="0 0 36 35" width={80} xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M25.8284 8.82975C25.8284 13.1521 22.3237 16.6595 18.0014 16.6595C13.6762 16.6595 10.1716 13.1549 10.1716 8.82975C10.1716 4.50464 13.6762 1 18.0014 1C22.3237 1 25.8284 4.50464 25.8284 8.82975ZM7.82975 18.6156C3.50736 18.6156 0 22.1202 0 26.4426C0 30.765 3.50464 34.2724 7.82975 34.2724C12.1549 34.2724 15.6595 30.7677 15.6595 26.4426C15.6595 22.1202 12.1549 18.6156 7.82975 18.6156ZM28.1703 18.6156C23.8451 18.6156 20.3405 22.1202 20.3405 26.4453C20.3405 30.7704 23.8451 34.2751 28.1703 34.2751C32.4926 34.2751 36 30.7704 36 26.4453C36 22.1202 32.4954 18.6156 28.1703 18.6156Z"
                 fill="#F06A6A"
@@ -49,7 +49,7 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     axios: (
-        <svg width={80} height={80} viewBox="0 0 188 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="none" height={80} viewBox="0 0 188 28" width={80} xmlns="http://www.w3.org/2000/svg">
             <path d="M93.295 3.65206L86.356 9.30495H90.8876V27.68L93.295 25.7411V3.65206Z" fill="#5A29E4" />
             <path d="M95.295 24.0997L102.356 18.305H97.6975V0.350052L95.295 2.02275V24.0997Z" fill="#5A29E4" />
             <path
@@ -57,16 +57,16 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
                 fill="#5A29E4"
             />
             <path
-                fillRule="evenodd"
                 clipRule="evenodd"
                 d="M132.182 27.497C130.07 27.497 128.15 27.129 126.422 26.393C124.694 25.625 123.205 24.601 121.957 23.321C120.709 22.009 119.749 20.537 119.077 18.905C118.406 17.273 118.069 15.593 118.069 13.865C118.069 12.105 118.421 10.409 119.125 8.77695C119.829 7.14495 120.822 5.70496 122.102 4.45695C123.382 3.17695 124.885 2.16895 126.613 1.43295C128.341 0.696953 130.229 0.328949 132.277 0.328949C134.389 0.328949 136.31 0.728952 138.038 1.52895C139.766 2.29695 141.238 3.33695 142.454 4.64895C143.702 5.92895 144.661 7.38495 145.333 9.01695C146.005 10.649 146.342 12.3129 146.342 14.0089C146.342 15.7689 145.99 17.465 145.286 19.097C144.582 20.697 143.589 22.137 142.309 23.417C141.061 24.665 139.574 25.657 137.846 26.393C136.118 27.129 134.23 27.497 132.182 27.497ZM123.925 13.913C123.925 15.353 124.262 16.729 124.934 18.041C125.605 19.321 126.549 20.361 127.765 21.161C129.013 21.961 130.501 22.361 132.229 22.361C133.989 22.361 135.477 21.945 136.693 21.113C137.91 20.249 138.837 19.177 139.477 17.8969C140.117 16.5849 140.438 15.241 140.438 13.865C140.438 12.425 140.102 11.0649 139.43 9.78495C138.758 8.50495 137.798 7.48095 136.549 6.71295C135.333 5.91295 133.878 5.51295 132.182 5.51295C130.422 5.51295 128.917 5.92895 127.669 6.76095C126.453 7.59295 125.525 8.64896 124.885 9.92896C124.245 11.209 123.925 12.537 123.925 13.913Z"
                 fill="#5A29E4"
+                fillRule="evenodd"
             />
             <path
-                fillRule="evenodd"
                 clipRule="evenodd"
                 d="M0 27.305L11.712 0.472954H16.464L28.128 27.305H21.984L19.296 21.017H8.88L6.192 27.305H0ZM14.112 7.52895L10.176 15.977H17.904L14.112 7.52895Z"
                 fill="#5A29E4"
+                fillRule="evenodd"
             />
             <path
                 d="M50.8211 0.472954L58.2131 9.97695L65.6051 0.472954H71.8931L61.2851 14.057L71.5571 27.305H65.2691L58.2131 18.185L51.2051 27.305H44.8211L55.1411 14.057L44.4851 0.472954H50.8211Z"
@@ -75,14 +75,14 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     babel: (
-        <svg width={80} height={80} viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg height={80} version="1.1" viewBox="0 0 73 73" width={80} xmlns="http://www.w3.org/2000/svg">
             <title>build-tools/babel</title>
             <desc>Created with Sketch.</desc>
             <defs></defs>
-            <g id="build-tools/babel" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                <g id="container" transform="translate(2.000000, 2.000000)" fillRule="nonzero">
-                    <rect id="mask" stroke="#000000" strokeWidth="2" fill="#F5DA55" x="-1" y="-1" width="71" height="71" rx="14"></rect>
-                    <g id="Babel-starter_cleaned" transform="translate(4.000000, 14.000000)" fill="#000000">
+            <g fill="none" fillRule="evenodd" id="build-tools/babel" stroke="none" strokeWidth="1">
+                <g fillRule="nonzero" id="container" transform="translate(2.000000, 2.000000)">
+                    <rect fill="#F5DA55" height="71" id="mask" rx="14" stroke="#000000" strokeWidth="2" width="71" x="-1" y="-1"></rect>
+                    <g fill="#000000" id="Babel-starter_cleaned" transform="translate(4.000000, 14.000000)">
                         <g
                             id="Group"
                             transform="translate(30.465659, 19.993718) rotate(-20.000044) translate(-30.465659, -19.993718) translate(2.020695, 9.069987)"
@@ -115,13 +115,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     backbone: (
         <svg
-            width={80}
             height={80}
-            viewBox="-31 0 318 318"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="-31 0 318 318"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <path
@@ -144,44 +144,44 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     bitbucket: (
-        <svg xmlns="http://www.w3.org/2000/svg" aria-label="Bitbucket" role="img" viewBox="0 0 512 512" width={80} height={80}>
-            <rect width="512" height="512" rx="15%" fill="#ffffff" />
+        <svg aria-label="Bitbucket" height={80} role="img" viewBox="0 0 512 512" width={80} xmlns="http://www.w3.org/2000/svg">
+            <rect fill="#ffffff" height="512" rx="15%" width="512" />
             <path
-                fill="#2684ff"
                 d="M422 130a10 10 0 00-9.9-11.7H100.5a10 10 0 00-10 11.7L136 409a10 10 0 009.9 8.4h221c5 0 9.2-3.5 10 -8.4L422 130zM291 316.8h-69.3l-18.7-98h104.8z"
+                fill="#2684ff"
             />
             <path
-                fill="url(#a)"
                 d="M59.632 25.2H40.94l-3.1 18.3h-13v18.9H52c1 0 1.7-.7 1.8-1.6l5.8-35.6z"
+                fill="url(#a)"
                 transform="translate(89.8 85) scale(5.3285)"
             />
-            <linearGradient id="a" x2="1" gradientTransform="rotate(141 22.239 22.239) scale(31.4)" gradientUnits="userSpaceOnUse">
+            <linearGradient gradientTransform="rotate(141 22.239 22.239) scale(31.4)" gradientUnits="userSpaceOnUse" id="a" x2="1">
                 <stop offset="0" stopColor="#0052cc" />
                 <stop offset="1" stopColor="#2684ff" />
             </linearGradient>
         </svg>
     ),
     calendar: (
-        <svg width={20} height={20} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="none" height={20} viewBox="0 0 24 24" width={20} xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M3 9H21M7 3V5M17 3V5M6 13H8M6 17H8M11 13H13M11 17H13M16 13H18M16 17H18M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
                 stroke="#e5e7eb"
-                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
+                strokeWidth="2"
             />
         </svg>
     ),
     css: (
-        <svg height={80} width={80} xmlns="http://www.w3.org/2000/svg" aria-label="CSS3" role="img" viewBox="0 0 512 512">
-            <path fill="#264de4" d="M72 460L30 0h451l-41 460-184 52" />
-            <path fill="#2965f1" d="M256 37V472l149-41 35-394" />
-            <path fill="#ebebeb" d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382" />
-            <path fill="#ffffff" d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z" />
+        <svg aria-label="CSS3" height={80} role="img" viewBox="0 0 512 512" width={80} xmlns="http://www.w3.org/2000/svg">
+            <path d="M72 460L30 0h451l-41 460-184 52" fill="#264de4" />
+            <path d="M256 37V472l149-41 35-394" fill="#2965f1" />
+            <path d="m114 94h142v56H119m5 58h132v57H129m3 28h56l4 45 64 17v59L139 382" fill="#ebebeb" />
+            <path d="m256 208v57h69l-7 73-62 17v59l115-32 26-288H256v56h80l-5.5 58Z" fill="#ffffff" />
         </svg>
     ),
     eas: (
-        <svg width={80} height={80} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <svg height={80} viewBox="0 0 32 32" width={80} xmlns="http://www.w3.org/2000/svg">
             <title>file_type_expo</title>
             <path
                 d="M3.979,20.059,11.252,6.2l7.155-3.835,2.127,1.074L13.422,7.457l7.349,22.088L18.407,28.17l-5.5-12.677-7.22,5.479Z"
@@ -196,13 +196,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     eslint: (
         <svg
-            width={80}
             height={80}
-            viewBox="0 -15.5 256 256"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="0 -15.5 256 256"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <path
@@ -218,13 +218,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     figma: (
         <svg
-            width={80}
             height={80}
-            viewBox="-64 0 384 384"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="-64 0 384 384"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <path
@@ -242,7 +242,7 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     git: (
-        <svg width={80} height={80} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="none" height={80} viewBox="0 0 32 32" width={80} xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z"
                 fill="#EE513B"
@@ -254,12 +254,12 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     github: (
-        <svg width={80} height={80} viewBox="0 -0.5 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg height={80} version="1.1" viewBox="0 -0.5 48 48" width={80} xmlns="http://www.w3.org/2000/svg">
             <title>Github-color</title>
             <desc>Created with Sketch.</desc>
             <defs></defs>
-            <g id="Icons" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                <g id="Color-" transform="translate(-700.000000, -560.000000)" fill="#3E75C3">
+            <g fill="none" fillRule="evenodd" id="Icons" stroke="none" strokeWidth="1">
+                <g fill="#3E75C3" id="Color-" transform="translate(-700.000000, -560.000000)">
                     <path
                         d="M723.9985,560 C710.746,560 700,570.787092 700,584.096644 C700,594.740671 706.876,603.77183 716.4145,606.958412 C717.6145,607.179786 718.0525,606.435849 718.0525,605.797328 C718.0525,605.225068 718.0315,603.710086 718.0195,601.699648 C711.343,603.155898 709.9345,598.469394 709.9345,598.469394 C708.844,595.686405 707.2705,594.94548 707.2705,594.94548 C705.091,593.450075 707.4355,593.480194 707.4355,593.480194 C709.843,593.650366 711.1105,595.963499 711.1105,595.963499 C713.2525,599.645538 716.728,598.58234 718.096,597.964902 C718.3135,596.407754 718.9345,595.346062 719.62,594.743683 C714.2905,594.135281 708.688,592.069123 708.688,582.836167 C708.688,580.205279 709.6225,578.054788 711.1585,576.369634 C710.911,575.759726 710.0875,573.311058 711.3925,569.993458 C711.3925,569.993458 713.4085,569.345902 717.9925,572.46321 C719.908,571.928599 721.96,571.662047 724.0015,571.651505 C726.04,571.662047 728.0935,571.928599 730.0105,572.46321 C734.5915,569.345902 736.603,569.993458 736.603,569.993458 C737.9125,573.311058 737.089,575.759726 736.8415,576.369634 C738.3805,578.054788 739.309,580.205279 739.309,582.836167 C739.309,592.091712 733.6975,594.129257 728.3515,594.725612 C729.2125,595.469549 729.9805,596.939353 729.9805,599.18773 C729.9805,602.408949 729.9505,605.006706 729.9505,605.797328 C729.9505,606.441873 730.3825,607.191834 731.6005,606.9554 C741.13,603.762794 748,594.737659 748,584.096644 C748,570.787092 737.254,560 723.9985,560"
                         id="Github"
@@ -270,13 +270,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     googlemapsAPI: (
         <svg
-            width={80}
             height={80}
-            viewBox="-55.5 0 367 367"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="-55.5 0 367 367"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <path
@@ -304,13 +304,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     graphql: (
         <svg
-            width={80}
             height={80}
-            viewBox="-16 0 288 288"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="-16 0 288 288"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g fillRule="evenodd">
                 <path
@@ -321,21 +321,21 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     html: (
-        <svg height={80} width={80} xmlns="http://www.w3.org/2000/svg" aria-label="HTML5" role="img" viewBox="0 0 512 512">
-            <path fill="#e34f26" d="M71 460L30 0h451l-41 460-185 52" />
-            <path fill="#ef652a" d="M256 472l149-41 35-394H256" />
-            <path fill="#ebebeb" d="M256 208h-75l-5-58h80V94H114l15 171h127zm-1 147l-63-17-4-45h-56l7 89 116 32z" />
-            <path fill="#ffffff" d="M255 208v57h70l-7 73-63 17v59l116-32 16-174zm0-114v56h137l5-56z" />
+        <svg aria-label="HTML5" height={80} role="img" viewBox="0 0 512 512" width={80} xmlns="http://www.w3.org/2000/svg">
+            <path d="M71 460L30 0h451l-41 460-185 52" fill="#e34f26" />
+            <path d="M256 472l149-41 35-394H256" fill="#ef652a" />
+            <path d="M256 208h-75l-5-58h80V94H114l15 171h127zm-1 147l-63-17-4-45h-56l7 89 116 32z" fill="#ebebeb" />
+            <path d="M255 208v57h70l-7 73-63 17v59l116-32 16-174zm0-114v56h137l5-56z" fill="#ffffff" />
         </svg>
     ),
     javascript: (
-        <svg xmlns="http://www.w3.org/2000/svg" aria-label="JavaScript" role="img" viewBox="0 0 512 512" width={80} height={80}>
-            <rect width="512" height="512" rx="15%" fill="#f7df1e" />
+        <svg aria-label="JavaScript" height={80} role="img" viewBox="0 0 512 512" width={80} xmlns="http://www.w3.org/2000/svg">
+            <rect fill="#f7df1e" height="512" rx="15%" width="512" />
             <path d="M324 370c10 17 24 29 47 29c20 0 33-10 33 -24c0-16 -13 -22 -35 -32l-12-5c-35-15 -58 -33 -58 -72c0-36 27 -64 70 -64c31 0 53 11 68 39l-37 24c-8-15 -17 -21 -31 -21c-14 0-23 9 -23 21c0 14 9 20 30 29l12 5c41 18 64 35 64 76c0 43-34 67 -80 67c-45 0-74 -21 -88 -49zm-170 4c8 13 14 25 31 25c16 0 26-6 26 -30V203h48v164c0 50-29 72 -72 72c-39 0-61 -20 -72 -44z" />
         </svg>
     ),
     jest: (
-        <svg width={80} height={80} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+        <svg height={80} viewBox="0 0 32 32" width={80} xmlns="http://www.w3.org/2000/svg">
             <title>file_type_jest</title>
             <path
                 d="M27.089,15.786a2.606,2.606,0,0,0-2.606-2.606,2.633,2.633,0,0,0-.274.014l3.58-10.558H12.576l3.575,10.549c-.052,0-.105-.005-.158-.005a2.606,2.606,0,0,0-.791,5.09,11.383,11.383,0,0,1-2.049,2.579A10.436,10.436,0,0,1,9.5,23.116a3.323,3.323,0,0,1-1.665-4.23c.077-.18.155-.362.229-.544a2.607,2.607,0,1,0-2.09-.4,20.134,20.134,0,0,0-1.889,4.787c-.354,2.135,0,4.4,1.845,5.681,4.3,2.981,8.969-1.848,13.891-3.061,1.784-.44,3.742-.369,5.313-1.279a4.45,4.45,0,0,0,2.179-3.088,4.639,4.639,0,0,0-.831-3.522,2.6,2.6,0,0,0,.606-1.671ZM18.6,15.8v-.009a2.6,2.6,0,0,0-1.256-2.23L20.188,7.8l2.85,5.814a2.6,2.6,0,0,0-1.161,2.169c0,.019,0,.038,0,.057L18.6,15.8Z"
@@ -348,7 +348,7 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     jira: (
-        <svg width={80} height={80} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="none" height={80} viewBox="0 0 16 16" width={80} xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M15.808 7.552L8.69.667 8 0 2.642 5.183l-2.45 2.37A.623.623 0 000 8c0 .168.069.329.192.448l4.895 4.735L8 16l5.358-5.183.083-.08 2.367-2.29A.623.623 0 0016 8a.623.623 0 00-.192-.448zM8 10.365L5.554 8 8 5.635 10.446 8 8 10.365z"
                 fill="#2684FF"
@@ -359,11 +359,11 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
                 fill="url(#paint1_linear)"
             />
             <defs>
-                <linearGradient id="paint0_linear" x1="7.563" y1="3.241" x2="4.262" y2="6.654" gradientUnits="userSpaceOnUse">
+                <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear" x1="7.563" x2="4.262" y1="3.241" y2="6.654">
                     <stop offset=".18" stopColor="#0052CC" />
                     <stop offset="1" stopColor="#2684FF" />
                 </linearGradient>
-                <linearGradient id="paint1_linear" x1="216.055" y1="490.616" x2="331.647" y2="413.158" gradientUnits="userSpaceOnUse">
+                <linearGradient gradientUnits="userSpaceOnUse" id="paint1_linear" x1="216.055" x2="331.647" y1="490.616" y2="413.158">
                     <stop offset=".18" stopColor="#0052CC" />
                     <stop offset="1" stopColor="#2684FF" />
                 </linearGradient>
@@ -371,16 +371,16 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     less: (
-        <svg width={80} height={80} viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg height={80} viewBox="0 0 32 32" width={80} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <defs>
                 <linearGradient
-                    id="a"
-                    x1="-3.609"
-                    y1="-492.685"
-                    x2="-3.609"
-                    y2="-480.271"
                     gradientTransform="translate(19.712 502.891)"
                     gradientUnits="userSpaceOnUse"
+                    id="a"
+                    x1="-3.609"
+                    x2="-3.609"
+                    y1="-492.685"
+                    y2="-480.271"
                 >
                     <stop offset="0.15" stopColor="#2a4f84" />
                     <stop offset="0.388" stopColor="#294e82" />
@@ -430,13 +430,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     mui: (
         <svg
-            width={80}
             height={80}
-            viewBox="0 -26 256 256"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="0 -26 256 256"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <polygon fill="#00B0FF" points="0 110.848 0 0 96 55.424 96 92.3733333 32 55.424 32 129.322667"></polygon>
@@ -454,13 +454,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     nodejs: (
         <svg
-            width={80}
             height={80}
-            viewBox="-16.5 0 289 289"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="-16.5 0 289 289"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <path
@@ -471,32 +471,32 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     npm: (
-        <svg width={80} height={80} viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg height={80} version="1.1" viewBox="0 0 73 73" width={80} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <title>build-tools/npm</title>
             <desc>Created with Sketch.</desc>
             <defs></defs>
-            <g id="build-tools/npm" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                <g id="container" transform="translate(2.000000, 2.000000)" fillRule="nonzero">
-                    <rect id="mask" stroke="#5B0403" strokeWidth="2" fill="#CB3837" x="-1" y="-1" width="71" height="71" rx="14"></rect>
+            <g fill="none" fillRule="evenodd" id="build-tools/npm" stroke="none" strokeWidth="1">
+                <g fillRule="nonzero" id="container" transform="translate(2.000000, 2.000000)">
+                    <rect fill="#CB3837" height="71" id="mask" rx="14" stroke="#5B0403" strokeWidth="2" width="71" x="-1" y="-1"></rect>
                     <g id="Npm-logo" transform="translate(10.000000, 25.000000)">
                         <path
                             d="M0,0 L50,0 L50,16.6666667 L25,16.6666667 L25,19.4444444 L13.8888889,19.4444444 L13.8888889,16.6666667 L0,16.6666667 L0,0 Z M2.77777778,13.8888889 L8.33333333,13.8888889 L8.33333333,5.55555556 L11.1111111,5.55555556 L11.1111111,13.8888889 L13.8888889,13.8888889 L13.8888889,2.77777778 L2.77777778,2.77777778 L2.77777778,13.8888889 Z M16.6666667,2.77777778 L16.6666667,16.6666667 L22.2222222,16.6666667 L22.2222222,13.8888889 L27.7777778,13.8888889 L27.7777778,2.77777778 L16.6666667,2.77777778 Z M22.2222222,5.55555556 L25,5.55555556 L25,11.1111111 L22.2222222,11.1111111 L22.2222222,5.55555556 Z M30.5555556,2.77777778 L30.5555556,13.8888889 L36.1111111,13.8888889 L36.1111111,5.55555556 L38.8888889,5.55555556 L38.8888889,13.8888889 L41.6666667,13.8888889 L41.6666667,5.55555556 L44.4444444,5.55555556 L44.4444444,13.8888889 L47.2222222,13.8888889 L47.2222222,2.77777778 L30.5555556,2.77777778 Z"
-                            id="Shape"
                             fill="#CB3837"
+                            id="Shape"
                         ></path>
                         <polygon
-                            id="Shape"
                             fill="#FFFFFF"
+                            id="Shape"
                             points="2.77777778 13.8888889 8.33333333 13.8888889 8.33333333 5.55555556 11.1111111 5.55555556 11.1111111 13.8888889 13.8888889 13.8888889 13.8888889 2.77777778 2.77777778 2.77777778"
                         ></polygon>
                         <path
                             d="M16.6666667,2.77777778 L16.6666667,16.6666667 L22.2222222,16.6666667 L22.2222222,13.8888889 L27.7777778,13.8888889 L27.7777778,2.77777778 L16.6666667,2.77777778 Z M25,11.1111111 L22.2222222,11.1111111 L22.2222222,5.55555556 L25,5.55555556 L25,11.1111111 Z"
-                            id="Shape"
                             fill="#FFFFFF"
+                            id="Shape"
                         ></path>
                         <polygon
-                            id="Shape"
                             fill="#FFFFFF"
+                            id="Shape"
                             points="30.5555556 2.77777778 30.5555556 13.8888889 36.1111111 13.8888889 36.1111111 5.55555556 38.8888889 5.55555556 38.8888889 13.8888889 41.6666667 13.8888889 41.6666667 5.55555556 44.4444444 5.55555556 44.4444444 13.8888889 47.2222222 13.8888889 47.2222222 2.77777778"
                         ></polygon>
                     </g>
@@ -505,20 +505,20 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     personalEmail: (
-        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.88" width={50} height={50}>
+        <svg data-name="Layer 1" height={50} id="Layer_1" viewBox="0 0 122.88 122.88" width={50} xmlns="http://www.w3.org/2000/svg">
             <path
-                style={{ fillRule: "evenodd" }}
                 d="M25.2,0H97.68a25.27,25.27,0,0,1,25.2,25.2V97.68a25.27,25.27,0,0,1-25.2,25.2H25.2A25.27,25.27,0,0,1,0,97.68V25.2A25.27,25.27,0,0,1,25.2,0Zm4.1,37.59L62,64.26,93.33,37.59ZM27.19,82.48l23.3-23.37-23.3-19V82.48ZM53.06,61.21,29,85.29H93.65l-23-24.08-7.57,6.45h0a1.66,1.66,0,0,1-2.12,0l-7.94-6.48ZM73.2,59.07,95.69,82.66V39.9L73.2,59.07Z"
+                style={{ fillRule: "evenodd" }}
             />
         </svg>
     ),
     personalGitHub: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+        <svg height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
         </svg>
     ),
     personalLinkedIn: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24">
+        <svg height="50" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
                 fill="#00090d"
@@ -526,46 +526,46 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     personalResume: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 50 50" version="1.1">
+        <svg height="50px" version="1.1" viewBox="0 0 50 50" width="50px" xmlns="http://www.w3.org/2000/svg">
             <g id="surface1">
                 <path
-                    style={{
-                        stroke: "none",
-                        fillRule: "nonzero",
-                        fillOpacity: "0",
-                    }}
                     d="M -0.0078125 -0.0585938 L 49.992188 -0.0585938 L 49.992188 49.941406 L -0.0078125 49.941406 Z M -0.0078125 -0.0585938 "
+                    style={{
+                        fillOpacity: "0",
+                        fillRule: "nonzero",
+                        stroke: "none",
+                    }}
                 />
                 <path
-                    style={{
-                        stroke: "none",
-                        fillRule: "nonzero",
-                        fill: "rgb(0%,0%,0%)",
-                        fillOpacity: 1,
-                    }}
                     d="M 5.5625 -0.179688 C 2.410156 -0.179688 -0.140625 1.824219 -0.140625 4.296875 L -0.140625 45.492188 C -0.140625 47.964844 2.414062 49.96875 5.5625 49.96875 L 44.335938 49.96875 C 47.480469 49.96875 50.035156 47.964844 50.035156 45.492188 L 50.035156 26.683594 C 50.035156 21.738281 44.929688 17.730469 38.632812 17.730469 L 32.929688 17.730469 C 29.78125 17.730469 27.230469 15.726562 27.230469 13.253906 L 27.230469 8.773438 C 27.230469 3.828125 22.121094 -0.179688 15.824219 -0.179688 Z M 11.261719 32.058594 C 11.261719 31.070312 12.285156 30.269531 13.542969 30.269531 L 36.351562 30.269531 C 37.613281 30.269531 38.632812 31.070312 38.632812 32.058594 C 38.632812 33.046875 37.613281 33.851562 36.351562 33.851562 L 13.542969 33.851562 C 12.285156 33.851562 11.261719 33.046875 11.261719 32.058594 Z M 13.542969 37.433594 C 12.285156 37.433594 11.261719 38.234375 11.261719 39.222656 C 11.261719 40.210938 12.285156 41.015625 13.542969 41.015625 L 24.949219 41.015625 C 26.207031 41.015625 27.230469 40.210938 27.230469 39.222656 C 27.230469 38.234375 26.207031 37.433594 24.949219 37.433594 Z M 13.542969 37.433594 "
-                />
-                <path
                     style={{
-                        stroke: "none",
-                        fillRule: "nonzero",
                         fill: "rgb(0%,0%,0%)",
                         fillOpacity: 1,
+                        fillRule: "nonzero",
+                        stroke: "none",
                     }}
+                />
+                <path
                     d="M 27.949219 0.570312 C 30.464844 2.84375 31.84375 5.757812 31.839844 8.769531 L 31.839844 13.246094 C 31.839844 13.742188 32.351562 14.144531 32.980469 14.144531 L 38.683594 14.144531 C 42.519531 14.140625 46.226562 15.222656 49.125 17.199219 C 46.402344 9.0625 38.308594 2.707031 27.949219 0.570312 Z M 27.949219 0.570312 "
+                    style={{
+                        fill: "rgb(0%,0%,0%)",
+                        fillOpacity: 1,
+                        fillRule: "nonzero",
+                        stroke: "none",
+                    }}
                 />
             </g>
         </svg>
     ),
     photoshop: (
-        <svg width={80} height={80} viewBox="0 123.30600000000001 595.279 595.279" xmlns="http://www.w3.org/2000/svg">
+        <svg height={80} viewBox="0 123.30600000000001 595.279 595.279" width={80} xmlns="http://www.w3.org/2000/svg">
             <radialGradient
-                id="a"
                 cx="-183.69"
                 cy="328.972"
-                r=".76"
                 gradientTransform="matrix(545.6736 0 0 528.3113 100439.305 -173525.125)"
                 gradientUnits="userSpaceOnUse"
+                id="a"
+                r=".76"
             >
                 <stop offset="0" stopColor="#34364e" stopOpacity=".98" />
                 <stop offset="1" stopColor="#0c0824" />
@@ -579,82 +579,82 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     prettier: (
         <svg
-            width={80}
             height={80}
-            viewBox="0 0 256 256"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="0 0 256 256"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
-                <rect fill="#56B3B4" x="182.857143" y="48.7619048" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#EA5E5E" x="0" y="243.809524" width="73.1428571" height="12.1904762" rx="5"></rect>
-                <rect fill="#BF85BF" x="146.285714" y="146.285714" width="48.7619048" height="12.1904762" rx="5"></rect>
-                <rect fill="#EA5E5E" x="73.1428571" y="146.285714" width="60.952381" height="12.1904762" rx="5"></rect>
-                <rect fill="#56B3B4" x="0" y="146.285714" width="60.952381" height="12.1904762" rx="5"></rect>
-                <rect fill="#BF85BF" x="0" y="195.047619" width="73.1428571" height="12.1904762" rx="5"></rect>
-                <rect fill="#BF85BF" x="0" y="97.5238095" width="73.1428571" height="12.1904762" rx="5"></rect>
-                <rect fill="#F7BA3E" x="60.952381" y="24.3809524" width="134.095238" height="12.1904762" rx="5"></rect>
-                <rect fill="#EA5E5E" x="0" y="24.3809524" width="48.7619048" height="12.1904762" rx="5"></rect>
-                <rect fill="#F7BA3E" x="48.7619048" y="219.428571" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#56B3B4" x="48.7619048" y="73.1428571" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#56B3B4" x="0" y="219.428571" width="36.5714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#F7BA3E" x="0" y="73.1428571" width="36.5714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="158.47619" y="219.428571" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="85.3333333" y="219.428571" width="60.952381" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="195.047619" y="219.428571" width="60.952381" height="12.1904762" rx="5"></rect>
-                <rect fill="#56B3B4" x="97.5238095" y="121.904762" width="109.714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#F7BA3E" x="36.5714286" y="121.904762" width="48.7619048" height="12.1904762" rx="5"></rect>
-                <rect fill="#EA5E5E" x="0" y="121.904762" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#BF85BF" x="109.714286" y="48.7619048" width="60.952381" height="12.1904762" rx="5"></rect>
-                <rect fill="#56B3B4" x="0" y="48.7619048" width="97.5238095" height="12.1904762" rx="5"></rect>
-                <rect fill="#F7BA3E" x="36.5714286" y="170.666667" width="121.904762" height="12.1904762" rx="5"></rect>
-                <rect fill="#BF85BF" x="0" y="170.666667" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#EA5E5E" x="146.285714" y="73.1428571" width="73.1428571" height="12.1904762" rx="5"></rect>
-                <rect fill="#F7BA3E" x="146.285714" y="97.5238095" width="73.1428571" height="12.1904762" rx="5"></rect>
-                <rect fill="#56B3B4" x="0" y="0" width="158.47619" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="170.666667" y="0" width="85.3333333" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="170.666667" y="170.666667" width="36.5714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="219.428571" y="170.666667" width="36.5714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="207.238095" y="146.285714" width="48.7619048" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="207.238095" y="24.3809524" width="48.7619048" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="219.428571" y="121.904762" width="36.5714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="219.428571" y="48.7619048" width="36.5714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="231.619048" y="73.1428571" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="231.619048" y="97.5238095" width="24.3809524" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="134.095238" y="195.047619" width="121.904762" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="85.3333333" y="195.047619" width="36.5714286" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="182.857143" y="243.809524" width="73.1428571" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="85.3333333" y="243.809524" width="85.3333333" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="85.3333333" y="73.1428571" width="48.7619048" height="12.1904762" rx="5"></rect>
-                <rect fill="#D0D4D8" opacity="0.5" x="85.3333333" y="97.5238095" width="48.7619048" height="12.1904762" rx="5"></rect>
+                <rect fill="#56B3B4" height="12.1904762" rx="5" width="24.3809524" x="182.857143" y="48.7619048"></rect>
+                <rect fill="#EA5E5E" height="12.1904762" rx="5" width="73.1428571" x="0" y="243.809524"></rect>
+                <rect fill="#BF85BF" height="12.1904762" rx="5" width="48.7619048" x="146.285714" y="146.285714"></rect>
+                <rect fill="#EA5E5E" height="12.1904762" rx="5" width="60.952381" x="73.1428571" y="146.285714"></rect>
+                <rect fill="#56B3B4" height="12.1904762" rx="5" width="60.952381" x="0" y="146.285714"></rect>
+                <rect fill="#BF85BF" height="12.1904762" rx="5" width="73.1428571" x="0" y="195.047619"></rect>
+                <rect fill="#BF85BF" height="12.1904762" rx="5" width="73.1428571" x="0" y="97.5238095"></rect>
+                <rect fill="#F7BA3E" height="12.1904762" rx="5" width="134.095238" x="60.952381" y="24.3809524"></rect>
+                <rect fill="#EA5E5E" height="12.1904762" rx="5" width="48.7619048" x="0" y="24.3809524"></rect>
+                <rect fill="#F7BA3E" height="12.1904762" rx="5" width="24.3809524" x="48.7619048" y="219.428571"></rect>
+                <rect fill="#56B3B4" height="12.1904762" rx="5" width="24.3809524" x="48.7619048" y="73.1428571"></rect>
+                <rect fill="#56B3B4" height="12.1904762" rx="5" width="36.5714286" x="0" y="219.428571"></rect>
+                <rect fill="#F7BA3E" height="12.1904762" rx="5" width="36.5714286" x="0" y="73.1428571"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="24.3809524" x="158.47619" y="219.428571"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="60.952381" x="85.3333333" y="219.428571"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="60.952381" x="195.047619" y="219.428571"></rect>
+                <rect fill="#56B3B4" height="12.1904762" rx="5" width="109.714286" x="97.5238095" y="121.904762"></rect>
+                <rect fill="#F7BA3E" height="12.1904762" rx="5" width="48.7619048" x="36.5714286" y="121.904762"></rect>
+                <rect fill="#EA5E5E" height="12.1904762" rx="5" width="24.3809524" x="0" y="121.904762"></rect>
+                <rect fill="#BF85BF" height="12.1904762" rx="5" width="60.952381" x="109.714286" y="48.7619048"></rect>
+                <rect fill="#56B3B4" height="12.1904762" rx="5" width="97.5238095" x="0" y="48.7619048"></rect>
+                <rect fill="#F7BA3E" height="12.1904762" rx="5" width="121.904762" x="36.5714286" y="170.666667"></rect>
+                <rect fill="#BF85BF" height="12.1904762" rx="5" width="24.3809524" x="0" y="170.666667"></rect>
+                <rect fill="#EA5E5E" height="12.1904762" rx="5" width="73.1428571" x="146.285714" y="73.1428571"></rect>
+                <rect fill="#F7BA3E" height="12.1904762" rx="5" width="73.1428571" x="146.285714" y="97.5238095"></rect>
+                <rect fill="#56B3B4" height="12.1904762" rx="5" width="158.47619" x="0" y="0"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="85.3333333" x="170.666667" y="0"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="36.5714286" x="170.666667" y="170.666667"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="36.5714286" x="219.428571" y="170.666667"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="48.7619048" x="207.238095" y="146.285714"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="48.7619048" x="207.238095" y="24.3809524"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="36.5714286" x="219.428571" y="121.904762"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="36.5714286" x="219.428571" y="48.7619048"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="24.3809524" x="231.619048" y="73.1428571"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="24.3809524" x="231.619048" y="97.5238095"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="121.904762" x="134.095238" y="195.047619"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="36.5714286" x="85.3333333" y="195.047619"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="73.1428571" x="182.857143" y="243.809524"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="85.3333333" x="85.3333333" y="243.809524"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="48.7619048" x="85.3333333" y="73.1428571"></rect>
+                <rect fill="#D0D4D8" height="12.1904762" opacity="0.5" rx="5" width="48.7619048" x="85.3333333" y="97.5238095"></rect>
             </g>
         </svg>
     ),
     react: (
-        <svg width={80} height={80} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg fill="none" height={80} viewBox="0 0 32 32" width={80} xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
                 fill="#53C1DE"
             />
             <path
-                fillRule="evenodd"
                 clipRule="evenodd"
                 d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
                 fill="#53C1DE"
+                fillRule="evenodd"
             />
         </svg>
     ),
     reactQuery: (
         <svg
-            width={80}
             height={80}
-            viewBox="0 0 256 230"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="0 0 256 230"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <path
@@ -669,14 +669,14 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
                     d="M189.647082,161.332552 C191.588117,160.988559 193.448154,162.232965 193.881519,164.142164 L193.905355,164.25523 L194.112185,165.329619 C200.82206,200.606276 196.095493,218.244604 179.932483,218.244604 C164.118603,218.244604 143.987753,203.193799 119.539933,173.09219 C118.999764,172.427101 118.70835,171.594508 118.715576,170.737729 C118.733331,168.741874 120.335,167.130688 122.316684,167.087425 L122.431425,167.086678 L123.718886,167.095808 C134.00664,167.151581 144.007879,166.792879 153.722602,166.019701 C165.1903,165.107007 177.165126,163.544623 189.647082,161.332552 Z M78.6458633,134.666898 L78.7078446,134.771519 L79.3538232,135.898918 C84.5306616,144.89904 89.9242479,153.441244 95.5345809,161.52553 C102.141724,171.04618 109.571769,180.684341 117.824717,190.440012 C119.101455,191.949222 118.955699,194.189372 117.515334,195.521636 L117.421639,195.605425 L116.591258,196.320149 C89.2852865,219.716955 71.5374632,224.387736 63.3477884,210.332492 C55.3313515,196.574563 58.2377577,171.558816 72.0670066,135.285251 C72.3708961,134.488162 72.9420247,133.821259 73.6828929,133.398394 C75.4143371,132.410139 77.6096238,132.980798 78.6458633,134.666898 Z M203.503403,82.6131343 L203.615296,82.6495484 L204.643048,83.0044846 C238.347807,94.729024 251.153123,107.613829 243.058996,121.658899 C235.142689,135.395415 212.128983,145.396769 174.017881,151.66296 C173.167999,151.802697 172.296021,151.640191 171.553528,151.203694 C169.79981,150.172718 169.213912,147.915277 170.244889,146.16156 C175.703461,136.876387 180.619696,127.637538 184.993594,118.445014 C189.954111,108.019605 194.609306,96.8294082 198.959178,84.8744237 C199.618683,83.061871 201.556008,82.0774197 203.391185,82.580471 L203.503403,82.6131343 Z M84.4464723,76.7099745 C86.2001901,77.740951 86.7860876,79.9983917 85.7551111,81.7521091 C80.2965391,91.0372816 75.3803041,100.27613 71.006406,109.468655 C66.0458889,119.894064 61.3906942,131.084261 57.0408219,143.039245 C56.3678577,144.888789 54.3643854,145.876086 52.4965968,145.300535 L52.384704,145.264121 L51.3569514,144.909184 C17.6521928,133.184645 4.84687687,120.29984 12.9410033,106.25477 C20.8573114,92.5182536 43.8710165,82.5168999 81.9821186,76.2507092 C82.8320004,76.1109723 83.7039793,76.2734775 84.4464723,76.7099745 Z M192.652212,18.9624716 C200.668648,32.7204007 197.762242,57.7361478 183.932993,94.0097128 C183.629104,94.8068024 183.057975,95.4737045 182.317107,95.8965695 C180.585663,96.8848251 178.390376,96.3141662 177.354137,94.6280655 L177.292155,94.5234449 L176.646177,93.396046 C171.469338,84.3959235 166.075752,75.8537196 160.465419,67.7694342 C153.858276,58.2487836 146.428231,48.6106226 138.175283,38.8549521 C136.898545,37.3457421 137.044301,35.1055922 138.484666,33.7733281 L138.578361,33.6895387 L139.408742,32.9748146 C166.714713,9.5780092 184.462537,4.90722821 192.652212,18.9624716 Z M77.4488122,10.5899281 C93.2626919,10.5899281 113.393541,25.6407329 137.841362,55.7423424 C138.381531,56.4074313 138.672945,57.2400244 138.665719,58.0968034 C138.647964,60.0926579 137.046295,61.7038447 135.064611,61.7471068 L134.94987,61.7478547 L133.662408,61.7387247 C123.374654,61.6829511 113.373416,62.0416532 103.658693,62.8148314 C92.1909953,63.7275257 80.2161685,65.2899089 67.7342126,67.5019801 C65.7931775,67.8459735 63.933141,66.601567 63.4997758,64.6923678 L63.4759394,64.5793022 L63.2691102,63.5049136 C56.5592347,28.2282565 61.285802,10.5899281 77.4488122,10.5899281 Z"
                     fill="#FF4154"
                 ></path>
-                <g transform="translate(80.575540, 73.669065)" fill="#FFD94C">
+                <g fill="#FFD94C" transform="translate(80.575540, 73.669065)">
                     <path d="M30.7189861,-1.39989681e-23 L62.2949309,-1.39989681e-23 C66.9127505,-1.39989681e-23 71.1778947,2.46984572 73.4764482,6.47495629 L89.3310931,34.1008556 C91.6118515,38.0749594 91.6118515,42.9610118 89.3310931,46.9351155 L73.4764482,74.5610148 C71.1778947,78.5661256 66.9127505,81.0359712 62.2949309,81.0359712 L30.7189861,81.0359712 C26.1011664,81.0359712 21.8360221,78.5661256 19.5374686,74.5610148 L3.68282375,46.9351155 C1.40206522,42.9610118 1.40206522,38.0749594 3.68282375,34.1008556 L19.5374686,6.47495629 C21.8360221,2.46984572 26.1011664,-1.39989681e-23 30.7189861,-1.39989681e-23 Z M57.4824555,8.33810638 C62.102714,8.33810638 66.369722,10.8105395 68.667368,14.818982 L79.7231631,34.106775 C81.999395,38.0778585 81.999395,42.9581127 79.7231631,46.9291962 L68.667368,66.216989 C66.369722,70.2254319 62.102714,72.6978647 57.4824555,72.6978647 L35.5314612,72.6978647 C30.9112026,72.6978647 26.6441947,70.2254319 24.3465487,66.216989 L13.2907533,46.9291962 C11.0145216,42.9581127 11.0145216,38.0778585 13.2907533,34.106775 L24.3465487,14.818982 C26.6441947,10.8105395 30.9112026,8.33810638 35.5314612,8.33810638 L57.4824555,8.33810638 Z M52.295383,17.4579102 L40.7185336,17.4579102 C36.1030177,17.4579102 31.8396344,19.925313 29.5402263,23.9272762 L29.5402263,23.9272762 L23.6980045,34.0952652 C21.4129658,38.0722196 21.4129658,42.9637516 23.6980045,46.9407061 L23.6980045,46.9407061 L29.5402263,57.108695 C31.8396344,61.1106583 36.1030177,63.5780609 40.7185336,63.5780609 L40.7185336,63.5780609 L52.295383,63.5780609 C56.9108991,63.5780609 61.1742821,61.1106583 63.4736902,57.108695 L63.4736902,57.108695 L69.3159123,46.9407061 C71.6009508,42.9637516 71.6009508,38.0722196 69.3159123,34.0952652 L69.3159123,34.0952652 L63.4736902,23.9272762 C61.1742821,19.925313 56.9108991,17.4579102 52.295383,17.4579102 L52.295383,17.4579102 Z M47.3007539,26.1868653 C51.9128126,26.1868653 56.1735523,28.6506045 58.4742386,32.6478447 L59.3025013,34.0868787 C61.5939706,38.0681056 61.5939706,42.9678656 59.3025013,46.9490924 L58.4742386,48.3881264 C56.1735523,52.3853665 51.9128126,54.8491059 47.3007539,54.8491059 L45.7131627,54.8491059 C41.101104,54.8491059 36.8403644,52.3853665 34.5396783,48.3881264 L33.7114156,46.9490924 C31.4199463,42.9678656 31.4199463,38.0681056 33.7114156,34.0868787 L34.5396783,32.6478447 C36.8403644,28.6506045 41.101104,26.1868653 45.7131627,26.1868653 L47.3007539,26.1868653 Z M46.5090408,34.7855375 C44.4563249,34.7855375 42.5632677,35.8780363 41.5383478,37.6517615 C40.5136007,39.4251878 40.5136007,41.6107834 41.5383478,43.3842097 C42.5632677,45.1579349 44.4563249,46.2504338 46.5048762,46.2504338 L46.5048762,46.2504338 C48.5575919,46.2504338 50.4506488,45.1579349 51.4755688,43.3842097 C52.5003161,41.6107834 52.5003161,39.4251878 51.4755688,37.6517615 C50.4506488,35.8780363 48.5575919,34.7855375 46.5090408,34.7855375 L46.5090408,34.7855375 Z M2.01124849e-22,40.5179856 L10.3208271,40.5179856"></path>
                 </g>
             </g>
         </svg>
     ),
     redux: (
-        <svg width={80} height={80} viewBox="0 -6 256 256" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+        <svg height={80} preserveAspectRatio="xMidYMid" viewBox="0 -6 256 256" width={80} xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M177.381 169.733c9.447-.978 16.614-9.122 16.288-18.896-.325-9.773-8.47-17.592-18.243-17.592h-.651c-10.1.326-17.918 8.796-17.592 18.895.326 4.887 2.28 9.122 5.212 12.054-11.076 21.828-28.016 37.791-53.426 51.148-17.266 9.122-35.183 12.38-53.1 10.1-14.66-1.955-26.062-8.47-33.23-19.222-10.424-15.963-11.401-33.23-2.605-50.496 6.19-12.38 15.962-21.502 22.152-26.063-1.303-4.235-3.258-11.402-4.235-16.614-47.237 34.207-42.35 80.468-28.016 102.295 10.75 16.29 32.577 26.389 56.684 26.389 6.515 0 13.03-.652 19.546-2.28 41.699-8.145 73.299-32.905 91.216-69.718zm57.336-40.397c-24.759-28.995-61.245-44.958-102.944-44.958h-5.212c-2.932-5.864-9.122-9.774-15.963-9.774h-.652C99.848 74.93 92.03 83.4 92.355 93.5c.326 9.773 8.47 17.592 18.243 17.592h.651c7.167-.326 13.357-4.887 15.963-11.077h5.864c24.759 0 48.214 7.167 69.39 21.176 16.288 10.751 28.016 24.76 34.531 41.7 5.538 13.683 5.212 27.04-.652 38.443-9.121 17.266-24.432 26.714-44.63 26.714-13.031 0-25.41-3.91-31.926-6.842-3.583 3.258-10.099 8.47-14.66 11.729 14.009 6.515 28.343 10.099 42.025 10.099 31.274 0 54.404-17.267 63.2-34.533 9.447-18.896 8.795-51.474-15.637-79.165zM69.225 175.27c.326 9.774 8.47 17.592 18.243 17.592h.652c10.099-.325 17.917-8.796 17.591-18.895-.325-9.774-8.47-17.592-18.243-17.592h-.651c-.652 0-1.63 0-2.28.325-13.357-22.153-18.895-46.26-16.94-72.323 1.302-19.547 7.818-36.488 19.22-50.497 9.447-12.054 27.69-17.918 40.07-18.243 34.531-.652 49.19 42.351 50.168 59.618 4.235.977 11.402 3.258 16.289 4.887C189.434 27.366 156.857 0 125.584 0c-29.32 0-56.359 21.176-67.11 52.451-14.985 41.7-5.212 81.771 13.031 113.372-1.628 2.28-2.606 5.864-2.28 9.448z"
                 fill="#764ABC"
@@ -684,25 +684,25 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     sass: (
-        <svg width={80} height={80} viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <svg height={80} version="1.1" viewBox="0 0 73 73" width={80} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <title>build-tools/sass</title>
             <desc>Created with Sketch.</desc>
             <defs></defs>
-            <g id="build-tools/sass" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
-                <g id="container" transform="translate(2.000000, 2.000000)" fill="#FFFFFF" fillRule="nonzero" stroke="#87305C" strokeWidth="2">
-                    <rect id="mask" x="-1" y="-1" width="71" height="71" rx="14"></rect>
+            <g fill="none" fillRule="evenodd" id="build-tools/sass" stroke="none" strokeWidth="1">
+                <g fill="#FFFFFF" fillRule="nonzero" id="container" stroke="#87305C" strokeWidth="2" transform="translate(2.000000, 2.000000)">
+                    <rect height="71" id="mask" rx="14" width="71" x="-1" y="-1"></rect>
                 </g>
                 <g id="sass-logo" transform="translate(10.000000, 10.000000)">
                     <path
                         d="M26.5,0 C41.1317121,0 53,11.8682879 53,26.5 C53,41.1317121 41.1317121,53 26.5,53 C11.8682879,53 0,41.1317121 0,26.5 C0,11.8682879 11.8682879,0 26.5,0 Z"
-                        id="Shape"
                         fill="#CC6699"
+                        id="Shape"
                     ></path>
                     <path
                         d="M43.1321012,11.3733463 C41.9359922,6.67140078 34.1303502,5.12470817 26.7371595,7.74377432 C22.3445525,9.30077821 17.5807393,11.7548638 14.157393,14.9616732 C10.0844358,18.766537 9.44513619,22.0764591 9.70291829,23.4581712 C10.6412451,28.3457198 17.3332685,31.5319066 20.0863813,33.9035019 L20.0863813,33.9138132 C19.2717899,34.3159533 13.3428016,37.316537 11.9507782,40.3892996 C10.4865759,43.6270428 12.1879377,45.957393 13.3118677,46.2667315 C16.7970817,47.2359922 20.3750973,45.4933852 22.2929961,42.6268482 C24.1490272,39.8634241 23.994358,36.2854086 23.1900778,34.5118677 C24.3036965,34.2231518 25.6029183,34.0891051 27.2424125,34.2747082 C31.8928016,34.8212062 32.8001946,37.718677 32.6249027,38.9354086 C32.4496109,40.1521401 31.4803502,40.8223735 31.1503891,41.0182879 C30.820428,41.2245136 30.7276265,41.2863813 30.748249,41.4410506 C30.7894942,41.6575875 30.9338521,41.6472763 31.2122568,41.6060311 C31.5937743,41.5441634 33.6560311,40.6161479 33.7385214,38.3785992 C33.8519455,35.5326848 31.1194553,32.3464981 26.2937743,32.4289883 C24.3036965,32.4599222 23.0560311,32.6558366 22.1486381,32.9857977 C22.0867704,32.9136187 22.0145914,32.8311284 21.9424125,32.7589494 C18.9521401,29.5727626 13.4356031,27.3145914 13.6727626,23.0354086 C13.7552529,21.4784047 14.301751,17.3745136 24.2830739,12.4044747 C32.4599222,8.33151751 39.0075875,9.45544747 40.1418288,11.9404669 C41.7607004,15.4875486 36.6463035,22.0867704 28.1498054,23.0457198 C24.9120623,23.4066148 23.2107004,22.1589494 22.7879377,21.6846304 C22.3445525,21.1896887 22.2723735,21.1690661 22.107393,21.2618677 C21.8392996,21.416537 22.0042802,21.8496109 22.107393,22.107393 C22.3651751,22.7673152 23.3963035,23.9324903 25.1801556,24.5202335 C26.7371595,25.0357977 30.5420233,25.3142023 35.1305447,23.5406615 C40.2964981,21.5299611 44.3075875,15.9928016 43.1321012,11.3733463 Z M21.2412451,35.357393 C21.6227626,36.7803502 21.5815175,38.1105058 21.1896887,39.3169261 C21.1484436,39.4509728 21.0968872,39.5850195 21.0453307,39.7087549 C20.9937743,39.8428016 20.9319066,39.966537 20.8700389,40.1005837 C20.5607004,40.7398833 20.148249,41.3379377 19.6429961,41.8844358 C18.1066148,43.5651751 15.9515564,44.1941634 15.0338521,43.6682879 C14.0336576,43.090856 14.5389105,40.7192607 16.3227626,38.8322957 C18.2406615,36.8009728 21.0040856,35.501751 21.0040856,35.501751 L21.0040856,35.4914397 C21.0762646,35.4398833 21.1587549,35.3986381 21.2412451,35.357393 Z"
-                        id="Shape"
                         fill="#FFFFFF"
                         fillRule="nonzero"
+                        id="Shape"
                     ></path>
                 </g>
             </g>
@@ -710,13 +710,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     semanticUI: (
         <svg
-            width={80}
             height={80}
-            viewBox="0 0 256 256"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="0 0 256 256"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <path d="M0,0 L256,0 L256,256 L0,256 L0,0 Z" fill="#34BDB2"></path>
@@ -727,11 +727,20 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
             </g>
         </svg>
     ),
+    sql: (
+        <svg height={80} viewBox="-8.78 0 70 70" width={80} xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="m 852.97077,1013.9363 c -6.55238,-0.4723 -13.02857,-2.1216 -17.00034,-4.3296 -2.26232,-1.2576 -3.98589,-2.8032 -4.66223,-4.1807 l -0.4024,-0.8196 0,-25.70807 0,-25.7081 0.31843,-0.6465 c 1.42297,-2.889 5.96432,-5.4935 12.30378,-7.0562 2.15195,-0.5305 5.2586,-1.0588 7.79304,-1.3252 2.58797,-0.2721 9.44765,-0.2307 12.02919,0.073 6.86123,0.8061 12.69967,2.6108 16.29768,5.0377 1.38756,0.9359 2.81137,2.4334 3.29371,3.4642 l 0.41358,0.8838 -0.0354,25.6303 -0.0354,25.63047 -0.33195,0.6744 c -0.18257,0.3709 -0.73406,1.1007 -1.22553,1.6216 -2.99181,3.1715 -9.40919,5.5176 -17.8267,6.5172 -1.71567,0.2038 -9.16916,0.3686 -10.92937,0.2417 z m 12.07501,-22.02839 c -0.0252,-0.0657 -1.00472,-0.93831 -2.17671,-1.93922 -1.17199,-1.00091 -2.18138,-1.86687 -2.24309,-1.92436 -0.0617,-0.0575 0.15481,-0.26106 0.48117,-0.45237 0.32635,-0.19131 0.95163,-0.7235 1.3895,-1.18265 1.2805,-1.34272 1.88466,-3.00131 1.88466,-5.17388 0,-2.1388 -0.65162,-3.8645 -1.95671,-5.1818 -1.31533,-1.3278 -2.82554,-1.8983 -5.02486,-1.8983 -3.39007,0 -5.99368,1.9781 -6.82468,5.1851 -0.28586,1.1031 -0.28432,3.33211 0.003,4.31023 0.74941,2.55136 2.79044,4.40434 5.33062,4.83946 0.8596,0.14724 0.97605,0.21071 1.5621,0.85144 0.34829,0.38078 1.06301,1.14085 1.58827,1.68904 l 0.95501,0.9967 2.53878,0 c 1.39633,0 2.51816,-0.0537 2.49296,-0.11939 z m -8.70653,-7.10848 c -0.61119,-0.31868 -0.84225,-0.56599 -1.19079,-1.27453 -0.26919,-0.54724 -0.31522,-0.85851 -0.31824,-2.15197 -0.003,-1.3143 0.0388,-1.5983 0.31987,-2.169 0.45985,-0.9339 1.09355,-1.376 2.07384,-1.4469 1.36454,-0.099 2.15217,0.5707 2.56498,2.1801 0.50612,1.97321 -0.0504,4.07107 -1.26471,4.76729 -0.63707,0.36527 -1.58737,0.40659 -2.18495,0.095 z m -11.25315,3.66269 c 2.66179,-0.5048 4.1728,-2.0528 4.1728,-4.27495 0,-1.97137 -0.97548,-3.12004 -3.6716,-4.32364 -1.54338,-0.689 -2.10241,-1.1215 -2.10241,-1.6268 0,-0.4188 0.53052,-0.8777 1.14813,-0.993 0.60302,-0.1126 2.20237,0.1652 3.14683,0.5467 l 0.79167,0.3198 0,-1.7524 0,-1.7525 -0.85923,-0.1906 c -0.53103,-0.1178 -1.64689,-0.1885 -2.92137,-0.1849 -1.80528,0 -2.15881,0.044 -2.83818,0.3138 -1.98445,0.7878 -2.92613,2.1298 -2.91107,4.1485 0.0141,1.8898 1.01108,3.06864 3.49227,4.12912 1.46399,0.62572 2.05076,1.10218 2.05076,1.66522 0,1.1965 -1.99362,1.34375 -4.10437,0.30315 -0.57805,-0.28498 -1.09739,-0.54137 -1.1541,-0.56976 -0.0567,-0.0284 -0.10311,0.79023 -0.10311,1.81917 0,1.86239 0.002,1.87137 0.33919,1.99974 1.26979,0.48278 4.07626,0.69787 5.52379,0.42335 z m 30.4308,-1.72766 0,-1.58098 -2.40584,0 -2.40583,0 0,-5.43035 0,-5.4303 -2.13089,0 -2.13088,0 0,7.0113 0,7.01131 4.53672,0 4.53672,0 0,-1.58098 z m -14.84745,-27.70503 c 4.23447,-0.2937 7.4086,-0.8482 10.20178,-1.7821 2.78264,-0.9304 4.42643,-2.0562 4.79413,-3.2834 0.14166,-0.4729 0.13146,-0.6523 -0.0665,-1.1708 -0.88775,-2.3245 -5.84694,-4.1104 -13.42493,-4.8345 -3.24154,-0.3098 -9.13671,-0.2094 -12.22745,0.2081 -4.71604,0.6372 -8.54333,1.8208 -10.2451,3.1683 -3.44251,2.726 0.19793,5.7242 8.66397,7.1354 3.67084,0.6119 8.42674,0.828 12.30414,0.559 z"
+                fill="#00bcf2"
+                transform="translate(-830.906 -943.981)"
+            />
+        </svg>
+    ),
     styledComponents: (
-        <svg viewBox="0 0 318 318" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width={80} height={80}>
+        <svg height={80} viewBox="0 0 318 318" width={80} xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <defs>
-                <path id="a" d="M0 0h318v318H0z" />
-                <mask id="b" fill="#fff" height="318" width="318" x="0" y="0">
+                <path d="M0 0h318v318H0z" id="a" />
+                <mask fill="#fff" height="318" id="b" width="318" x="0" y="0">
                     <use xlinkHref="#a" />
                 </mask>
             </defs>
@@ -749,29 +758,20 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
             </g>
         </svg>
     ),
-    sql: (
-        <svg width={80} height={80} viewBox="-8.78 0 70 70" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="m 852.97077,1013.9363 c -6.55238,-0.4723 -13.02857,-2.1216 -17.00034,-4.3296 -2.26232,-1.2576 -3.98589,-2.8032 -4.66223,-4.1807 l -0.4024,-0.8196 0,-25.70807 0,-25.7081 0.31843,-0.6465 c 1.42297,-2.889 5.96432,-5.4935 12.30378,-7.0562 2.15195,-0.5305 5.2586,-1.0588 7.79304,-1.3252 2.58797,-0.2721 9.44765,-0.2307 12.02919,0.073 6.86123,0.8061 12.69967,2.6108 16.29768,5.0377 1.38756,0.9359 2.81137,2.4334 3.29371,3.4642 l 0.41358,0.8838 -0.0354,25.6303 -0.0354,25.63047 -0.33195,0.6744 c -0.18257,0.3709 -0.73406,1.1007 -1.22553,1.6216 -2.99181,3.1715 -9.40919,5.5176 -17.8267,6.5172 -1.71567,0.2038 -9.16916,0.3686 -10.92937,0.2417 z m 12.07501,-22.02839 c -0.0252,-0.0657 -1.00472,-0.93831 -2.17671,-1.93922 -1.17199,-1.00091 -2.18138,-1.86687 -2.24309,-1.92436 -0.0617,-0.0575 0.15481,-0.26106 0.48117,-0.45237 0.32635,-0.19131 0.95163,-0.7235 1.3895,-1.18265 1.2805,-1.34272 1.88466,-3.00131 1.88466,-5.17388 0,-2.1388 -0.65162,-3.8645 -1.95671,-5.1818 -1.31533,-1.3278 -2.82554,-1.8983 -5.02486,-1.8983 -3.39007,0 -5.99368,1.9781 -6.82468,5.1851 -0.28586,1.1031 -0.28432,3.33211 0.003,4.31023 0.74941,2.55136 2.79044,4.40434 5.33062,4.83946 0.8596,0.14724 0.97605,0.21071 1.5621,0.85144 0.34829,0.38078 1.06301,1.14085 1.58827,1.68904 l 0.95501,0.9967 2.53878,0 c 1.39633,0 2.51816,-0.0537 2.49296,-0.11939 z m -8.70653,-7.10848 c -0.61119,-0.31868 -0.84225,-0.56599 -1.19079,-1.27453 -0.26919,-0.54724 -0.31522,-0.85851 -0.31824,-2.15197 -0.003,-1.3143 0.0388,-1.5983 0.31987,-2.169 0.45985,-0.9339 1.09355,-1.376 2.07384,-1.4469 1.36454,-0.099 2.15217,0.5707 2.56498,2.1801 0.50612,1.97321 -0.0504,4.07107 -1.26471,4.76729 -0.63707,0.36527 -1.58737,0.40659 -2.18495,0.095 z m -11.25315,3.66269 c 2.66179,-0.5048 4.1728,-2.0528 4.1728,-4.27495 0,-1.97137 -0.97548,-3.12004 -3.6716,-4.32364 -1.54338,-0.689 -2.10241,-1.1215 -2.10241,-1.6268 0,-0.4188 0.53052,-0.8777 1.14813,-0.993 0.60302,-0.1126 2.20237,0.1652 3.14683,0.5467 l 0.79167,0.3198 0,-1.7524 0,-1.7525 -0.85923,-0.1906 c -0.53103,-0.1178 -1.64689,-0.1885 -2.92137,-0.1849 -1.80528,0 -2.15881,0.044 -2.83818,0.3138 -1.98445,0.7878 -2.92613,2.1298 -2.91107,4.1485 0.0141,1.8898 1.01108,3.06864 3.49227,4.12912 1.46399,0.62572 2.05076,1.10218 2.05076,1.66522 0,1.1965 -1.99362,1.34375 -4.10437,0.30315 -0.57805,-0.28498 -1.09739,-0.54137 -1.1541,-0.56976 -0.0567,-0.0284 -0.10311,0.79023 -0.10311,1.81917 0,1.86239 0.002,1.87137 0.33919,1.99974 1.26979,0.48278 4.07626,0.69787 5.52379,0.42335 z m 30.4308,-1.72766 0,-1.58098 -2.40584,0 -2.40583,0 0,-5.43035 0,-5.4303 -2.13089,0 -2.13088,0 0,7.0113 0,7.01131 4.53672,0 4.53672,0 0,-1.58098 z m -14.84745,-27.70503 c 4.23447,-0.2937 7.4086,-0.8482 10.20178,-1.7821 2.78264,-0.9304 4.42643,-2.0562 4.79413,-3.2834 0.14166,-0.4729 0.13146,-0.6523 -0.0665,-1.1708 -0.88775,-2.3245 -5.84694,-4.1104 -13.42493,-4.8345 -3.24154,-0.3098 -9.13671,-0.2094 -12.22745,0.2081 -4.71604,0.6372 -8.54333,1.8208 -10.2451,3.1683 -3.44251,2.726 0.19793,5.7242 8.66397,7.1354 3.67084,0.6119 8.42674,0.828 12.30414,0.559 z"
-                fill="#00bcf2"
-                transform="translate(-830.906 -943.981)"
-            />
-        </svg>
-    ),
     tailwindcss: (
         <svg
-            width={80}
             height={80}
-            viewBox="0 -51 256 256"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="0 -51 256 256"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <defs>
-                <linearGradient x1="-2.77777778%" y1="32%" x2="100%" y2="67.5555556%" id="linearGradient-1">
-                    <stop stopColor="#2298BD" offset="0%"></stop>
-                    <stop stopColor="#0ED7B5" offset="100%"></stop>
+                <linearGradient id="linearGradient-1" x1="-2.77777778%" x2="100%" y1="32%" y2="67.5555556%">
+                    <stop offset="0%" stopColor="#2298BD"></stop>
+                    <stop offset="100%" stopColor="#0ED7B5"></stop>
                 </linearGradient>
             </defs>
             <g>
@@ -783,29 +783,29 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
         </svg>
     ),
     typescript: (
-        <svg width={80} height={80} viewBox="0 0 73 73" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg height={80} version="1.1" viewBox="0 0 73 73" width={80} xmlns="http://www.w3.org/2000/svg">
             <defs>
-                <rect id="path-1" x="4" y="4" width="69" height="69" rx="14"></rect>
+                <rect height="69" id="path-1" rx="14" width="69" x="4" y="4"></rect>
             </defs>
-            <g id="build-tools/typescript" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+            <g fill="none" fillRule="evenodd" id="build-tools/typescript" stroke="none" strokeWidth="1">
                 <g id="container" transform="translate(-2.000000, -2.000000)">
                     <rect
-                        id="mask"
-                        stroke="#003355"
-                        strokeWidth="2"
                         fill="#FFFFFF"
                         fillRule="nonzero"
+                        height="71"
+                        id="mask"
+                        rx="14"
+                        stroke="#003355"
+                        strokeWidth="2"
+                        width="71"
                         x="3"
                         y="3"
-                        width="71"
-                        height="71"
-                        rx="14"
                     ></rect>
-                    <mask id="mask-2" fill="white">
+                    <mask fill="white" id="mask-2">
                         <use xlinkHref="#path-1"></use>
                     </mask>
-                    <rect stroke="#003355" strokeWidth="2" x="3" y="3" width="71" height="71" rx="14"></rect>
-                    <g id="logo" mask="url(#mask-2)" fill="#007ACC" fillRule="nonzero">
+                    <rect height="71" rx="14" stroke="#003355" strokeWidth="2" width="71" x="3" y="3"></rect>
+                    <g fill="#007ACC" fillRule="nonzero" id="logo" mask="url(#mask-2)">
                         <g id="Group" transform="translate(36.500000, 36.500000) scale(-1, 1) rotate(-180.000000) translate(-36.500000, -36.500000) ">
                             <path
                                 d="M0,36.5 L0,0 L36.5,0 L73,0 L73,36.5 L73,73 L36.5,73 L0,73 L0,36.5 Z M58.8287302,39.4084127 C60.6826984,38.9449206 62.0963492,38.1222222 63.394127,36.7780952 C64.0661905,36.0596825 65.0626984,34.7503175 65.1438095,34.4374603 C65.1669841,34.3447619 61.9920635,32.2126984 60.0685714,31.0192063 C59.9990476,30.9728571 59.7209524,31.274127 59.4080952,31.737619 C58.4695238,33.1049206 57.4846032,33.695873 55.978254,33.8001587 C53.7650794,33.9507937 52.3398413,32.7920635 52.3514286,30.8569841 C52.3514286,30.2892063 52.4325397,29.9531746 52.6642857,29.4896825 C53.1509524,28.4815873 54.0547619,27.8790476 56.8936508,26.6507937 C62.1195238,24.4028571 64.355873,22.9196825 65.7463492,20.8107937 C67.2990476,18.4585714 67.6466667,14.7042857 66.5922222,11.911746 C65.4334921,8.87587302 62.5598413,6.81333333 58.515873,6.12968254 C57.2644444,5.90952381 54.2980952,5.94428571 52.9539683,6.18761905 C50.022381,6.70904762 47.2414286,8.15746032 45.5265079,10.0577778 C44.8544444,10.7993651 43.5450794,12.7344444 43.6261905,12.8734921 C43.6609524,12.9198413 43.9622222,13.1052381 44.298254,13.3022222 C44.6226984,13.487619 45.8509524,14.1944444 47.0096825,14.8665079 L49.1069841,16.0831746 L49.5473016,15.4342857 C50.1614286,14.4957143 51.5055556,13.2095238 52.3166667,12.7807937 C54.6457143,11.5525397 57.8438095,11.7263492 59.4196825,13.14 C60.091746,13.754127 60.3698413,14.3914286 60.3698413,15.33 C60.3698413,16.175873 60.2655556,16.5466667 59.8252381,17.1839683 C59.2574603,17.9950794 58.0987302,18.6787302 54.8079365,20.1039683 C51.0420635,21.7261905 49.4198413,22.7342857 47.9366667,24.3333333 C47.0792063,25.2603175 46.2680952,26.7434921 45.9320635,27.9833333 C45.6539683,29.0146032 45.5844444,31.5985714 45.8046032,32.6414286 C46.5809524,36.2798413 49.3271429,38.8174603 53.29,39.5706349 C54.5761905,39.8139683 57.5657143,39.7212698 58.8287302,39.4084127 Z M41.6911111,36.3609524 L41.7142857,33.3714286 L36.9634921,33.3714286 L32.2126984,33.3714286 L32.2126984,19.8722222 L32.2126984,6.37301587 L28.852381,6.37301587 L25.4920635,6.37301587 L25.4920635,19.8722222 L25.4920635,33.3714286 L20.7412698,33.3714286 L15.9904762,33.3714286 L15.9904762,36.3030159 C15.9904762,37.9252381 16.0252381,39.2809524 16.0715873,39.3157143 C16.1063492,39.3620635 21.8884127,39.3852381 28.8987302,39.3736508 L41.6563492,39.3388889 L41.6911111,36.3609524 Z"
@@ -819,13 +819,13 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     webpack: (
         <svg
-            width={80}
             height={80}
-            viewBox="-17 0 290 290"
+            preserveAspectRatio="xMidYMid"
             version="1.1"
+            viewBox="-17 0 290 290"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            preserveAspectRatio="xMidYMid"
         >
             <g>
                 <polygon fill="#FFFFFF" points="128 0.0483018868 256 72.4528302 256 217.310189 128 289.714717 0 217.310189 0 72.4528302"></polygon>
@@ -842,31 +842,31 @@ export const iconDictionary: Record<SVG, JSX.Element> = {
     ),
     zustand: (
         <svg
-            width={80}
+            aria-hidden="true"
+            className="iconify iconify--fxemoji"
             height={80}
+            preserveAspectRatio="xMidYMid meet"
+            role="img"
             viewBox="0 0 512 512"
+            width={80}
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            aria-hidden="true"
-            role="img"
-            className="iconify iconify--fxemoji"
-            preserveAspectRatio="xMidYMid meet"
         >
             <path
-                fill="#AF773F"
                 d="M505.769 339.18c0-79.323-66.074-89.722-67.631-128.426c-.052-4.03-.249-8.025-.56-11.988c29.177-13.125 49.505-42.427 49.505-76.495c0-46.314-37.545-83.86-83.86-83.86c-20.089 0-38.522 7.072-52.963 18.851C322.761 40.598 290.503 31 255.999 31c-35.799 0-69.181 10.33-97.338 28.167c-14.751-12.913-34.053-20.756-55.197-20.756c-46.314 0-83.86 37.545-83.86 83.86c0 36.043 22.743 66.768 54.658 78.626a184.139 184.139 0 0 0-.406 10.284c-1.963 37.891-65.001 48.714-66.53 125.162a132.16 132.16 0 0 0-1.096 16.982c0 72.27 58.586 130.856 130.856 130.856c.336 0 .686-.006 1.048-.016c13.734-.108 26.959-2.335 39.374-6.366c8.255-1.677 16.951-3.494 25.495-5.206c36.02 18.846 75.361 23.353 103.252 4.547c22.013 4.937 46.859 9.13 68.655 7.041c72.27 0 130.856-58.586 130.856-130.856c0-4.325-.216-8.6-.626-12.817c.41-.401.629-.842.629-1.328zM215.157 470.227c3.247-.61 6.424-1.185 9.497-1.71a56.977 56.977 0 0 1-9.497 1.71z"
+                fill="#AF773F"
             ></path>
             <path
-                fill="#D19B61"
                 d="M277.806 304.361s7.646 9.475 20.474 23.688c6.353 7.106 13.072 15.397 23.922 24.28c10.512 8.883 23.621 18.358 30.381 27.833c6.869 9.475 7.806 18.95 8.496 27.833c.347 8.883-1.352 17.174-4.29 24.28c-2.957 7.106-6.92 13.028-10.807 17.174c-3.471 4.145-6.726 6.514-6.726 6.514c-50.847 37.002-118.23 35.043-166.513 0c0 0-3.255-2.369-6.726-6.514c-3.888-4.145-7.85-10.067-10.808-17.174c-2.937-7.106-4.636-15.397-4.289-24.28c.69-8.883 1.628-18.358 8.495-27.833c6.759-9.475 19.869-18.95 30.381-27.833c10.851-8.883 17.569-17.174 23.922-24.28c12.83-14.212 20.475-23.688 20.475-23.688c9.718-12.043 27.359-13.928 39.402-4.21a29.552 29.552 0 0 1 4.211 4.21z"
+                fill="#D19B61"
             ></path>
             <path
-                fill="#2B3B47"
                 d="M145.578 241.842c15.148 0 27.428 12.28 27.428 27.428v33.716c0 15.148-12.28 27.428-27.428 27.428c-15.148 0-27.428-12.28-27.428-27.428V269.27c0-15.148 12.28-27.428 27.428-27.428zm220.844 0c-15.148 0-27.428 12.28-27.428 27.428v33.716c0 15.148 12.28 27.428 27.428 27.428c15.148 0 27.428-12.28 27.428-27.428V269.27c0-15.148-12.28-27.428-27.428-27.428zM234.534 357.328l-2.076.566l-1.109.309l-1.173.371c-.822.268-1.895.575-2.776.919l-3.114 1.141c-1.002.415-2.124.864-3.136 1.344c-1.103.48-2.04.99-3.106 1.528c-.929.538-1.989 1.104-2.831 1.694c-3.72 2.362-6.117 5.117-7.139 8.069a7.21 7.21 0 0 0-.031 4.551c.461 1.55 1.454 3.124 2.402 4.699c.963 1.574 1.972 3.149 2.737 4.699l1.212 2.303l1.283 2.248l1.343 2.174l1.386 2.082a80.21 80.21 0 0 0 2.829 3.813c.95 1.181 1.836 2.263 2.73 3.223c.882.959 1.629 1.796 2.352 2.485c.675.689 1.262 1.23 1.673 1.599c.395.369.642.566.642.566c15.658 12.476 38.409 13.002 54.736 0c0 0 .247-.197.642-.566c.41-.369.998-.91 1.673-1.599c.723-.689 1.47-1.525 2.352-2.485c.894-.959 1.78-2.042 2.73-3.223a80.21 80.21 0 0 0 2.829-3.813l1.386-2.082l1.343-2.174l1.283-2.248l1.212-2.303c.765-1.55 1.774-3.124 2.737-4.699c.948-1.574 1.941-3.149 2.402-4.699a7.21 7.21 0 0 0-.031-4.551c-1.022-2.952-3.419-5.707-7.139-8.069c-.843-.59-1.902-1.156-2.831-1.694c-1.066-.538-2.004-1.049-3.106-1.528c-1.012-.48-2.134-.929-3.136-1.344l-3.114-1.141c-.881-.344-1.954-.652-2.776-.919l-1.173-.371a314.47 314.47 0 0 1-1.109-.309l-2.076-.566c-13.509-3.634-28.462-3.944-42.932 0z"
+                fill="#2B3B47"
             ></path>
             <path
-                fill="#E583C9"
                 d="M60.088 122.271c0-23.956 19.42-43.376 43.376-43.376a43.164 43.164 0 0 1 22.766 6.455c-20.32 20.633-35.755 46.084-44.439 74.488c-12.969-7.499-21.703-21.509-21.703-37.567zm369.215 34.659c10.504-7.916 17.296-20.493 17.296-34.659c0-23.956-19.42-43.376-43.376-43.376a43.17 43.17 0 0 0-19.341 4.552c20.552 20.265 36.308 45.377 45.421 73.483z"
+                fill="#E583C9"
             ></path>
         </svg>
     ),
