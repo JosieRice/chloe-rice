@@ -11,19 +11,19 @@ import { VersionControl } from "@/components/VersionControl";
 import { WorkTracking } from "@/components/WorkTracking";
 
 export default function Home() {
-  return (
-    <main>
-      <Hero />
-      <Languages />
-      <StyleAndLayout />
-      <Libraries />
-      <BuildTools />
-      <Testing />
-      <VersionControl />
-      <Mobile />
-      <Design />
-      <Backend />
-      <WorkTracking />
-    </main>
-  );
+    return (
+        <main>
+            <Hero />
+            <Languages />
+            <StyleAndLayout />
+            <Libraries />
+            <BuildTools />
+            <Testing />
+            <VersionControl />
+            <Mobile />
+            <Design />
+            <Backend />
+            <WorkTracking />
+        </main>
+    );
 }
