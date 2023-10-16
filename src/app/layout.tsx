@@ -1,13 +1,15 @@
-import { NavBar } from "@/components/NavBar";
-import "./globals.css";
 import type { Metadata } from "next";
+
+import { NavBar } from "@/components/NavBar";
 import { Inter } from "next/font/google";
+
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Chloë Rice",
     description: "Front end developer",
+    title: "Chloë Rice",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

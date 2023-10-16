@@ -1,15 +1,15 @@
 import { iconDictionary } from "@/utils/iconDictionary";
 
 interface Props {
-    htmlUrl: string;
-    privateBool: boolean;
-    name: string;
     createdAt: string;
     description: string;
+    htmlUrl: string;
     language: string;
+    name: string;
+    privateBool: boolean;
 }
 
-export function GitHubCard({ htmlUrl, name, privateBool, createdAt, description, language }: Props) {
+export function GitHubCard({ createdAt, description, htmlUrl, language, name, privateBool }: Props) {
     return (
         <a className="card w-96 bg-accent-content shadow-xl border-solid border-2 border-neutral" href={htmlUrl} target="_blank">
             <div className="card-body">
@@ -32,7 +32,7 @@ export function GitHubCard({ htmlUrl, name, privateBool, createdAt, description,
     );
 }
 
-const getLanguageDot = (language: string | null) => {
+const getLanguageDot = (language: null | string) => {
     let color;
     if (language?.toLowerCase() === "javascript") color = "#f1e05a";
     if (language?.toLowerCase() === "typescript") color = "#3178c6";
@@ -43,10 +43,10 @@ const getLanguageDot = (language: string | null) => {
             <span
                 style={{
                     backgroundColor: color,
-                    width: "12px",
-                    height: "12px",
                     borderRadius: "50px",
+                    height: "12px",
                     marginRight: "8px",
+                    width: "12px",
                 }}
             />
         );

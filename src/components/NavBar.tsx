@@ -6,13 +6,13 @@ export function NavBar() {
             <div className="flex-1">
                 <Link className="btn btn-ghost normal-case text-xl" href="/">
                     <svg
-                        xmlns="http://www.w3.org/2000/svg"
                         fill="#cac9c9"
-                        version="1.1"
-                        id="Capa_1"
-                        width="20"
                         height="20"
+                        id="Capa_1"
+                        version="1.1"
                         viewBox="0 0 495.398 495.398"
+                        width="20"
+                        xmlns="http://www.w3.org/2000/svg"
                     >
                         <g>
                             <g>
