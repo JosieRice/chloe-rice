@@ -1,10 +1,10 @@
-name: PR-to-main
+name: PR-to-master
 on:
     pull_request:
         branches:
-            - main
+            - master
 jobs:
-    PR-to-main:
+    PR-to-master:
         runs-on: ubuntu-latest
         timeout-minutes: 1
 
