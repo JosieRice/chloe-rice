@@ -12,8 +12,6 @@ export default async function Blog() {
 
     const posts = await getAllPostsForHome(isEnabled);
 
-    console.log(posts);
-
     if (!posts || posts.length === 0) {
         return (
             <main>
@@ -25,7 +23,7 @@ export default async function Blog() {
     return (
         <>
             {posts.map((post) => (
-                <Link href={`/posts/${post.slug}`} key={post.sys.id}>
+                <Link href={`/blog/${post.slug}`} key={post.sys.id}>
                     {post.title}
                 </Link>
             ))}

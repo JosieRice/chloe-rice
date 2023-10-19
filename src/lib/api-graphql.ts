@@ -4,7 +4,9 @@ interface Sys {
 
 export interface Post {
     __typename: string;
-    description: string;
+    description: {
+        json: any;
+    };
     slug: string;
     sys: Sys;
     title: string;
@@ -27,8 +29,10 @@ const POST_GRAPHQL_FIELDS = `
   }
   slug
   title
-  description
-  `;
+  description {
+    json
+  }
+`;
 
 async function fetchGraphQL(query: string, draftMode = false): Promise<FetchResponse> {
     return fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`, {
