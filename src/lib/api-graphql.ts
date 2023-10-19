@@ -91,8 +91,6 @@ export async function getAllPostsForHome(draftMode: boolean): Promise<Post[] | u
         }`,
         draftMode
     );
-
-    console.log(entries);
     return extractPostEntries(entries);
 }
 

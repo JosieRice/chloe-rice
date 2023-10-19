@@ -1,10 +1,14 @@
+"use client";
+
+import { ArticleContent } from "@/components/features/articles/ArticleContent";
 import { Post } from "@/lib/api-graphql";
 import { ContentfulLivePreview } from "@contentful/live-preview";
 
 export default function PostLayout({ post }: { post: Post }) {
     return (
         <>
-            <h1
+            <ArticleContent article={post} />
+            {/* <h1
                 {...ContentfulLivePreview.getProps({
                     entryId: post.sys.id,
                     fieldId: "title",
@@ -21,7 +25,7 @@ export default function PostLayout({ post }: { post: Post }) {
                 })}
             >
                 {post.description.json.content[0].content[0].value}
-            </p>
+            </p> */}
         </>
     );
 }
