@@ -11,8 +11,6 @@ export function Libraries() {
             <SkillBadge src="/depIcons/nextjs.png" title="NextJs" />
             <SkillBadge svg="zustand" title="Zustand" />
             <SkillBadge svg="redux" title="Redux" />
-            <SkillBadge svg="eslint" title="EsLint" />
-            <SkillBadge svg="prettier" title="Prettier" />
             <SkillBadge svg="googlemapsAPI" title="Google Maps API" />
             <SkillBadge svg="backbone" title="Backbone" />
         </SkillSection>
