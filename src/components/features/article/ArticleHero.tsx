@@ -1,8 +1,8 @@
 "use client";
 
 import { ArticleAuthor } from "@/components/features/article/ArticleAuthor";
+import { ArticleLabel } from "@/components/features/article/ArticleLabel";
 import { CtfImage } from "@/components/features/contentful/CtfImage";
-// import { ArticleLabel } from "@src/components/features/article/ArticleLabel";
 import { FormatDate } from "@/components/shared/FormatDate";
 import { useContentfulInspectorMode } from "@contentful/live-preview/react";
 import { twMerge } from "tailwind-merge";
@@ -33,16 +33,16 @@ export const ArticleHero = ({ article, isFeatured, isReversedLayout = false }: A
             <div className="relative flex flex-1 basis-1/2 flex-col justify-center py-6 px-4 lg:px-16 lg:py-12 xl:px-24">
                 <div className="mb-2 flex flex-wrap items-center">
                     <ArticleAuthor article={article} />
-                    {/*  {isFeatured && (
+                    {isFeatured && (
                         <ArticleLabel
                             className={twMerge(
                                 "ml-auto pl-2 lg:absolute lg:top-8 xl:top-12",
                                 isReversedLayout ? "lg:left-6 xl:left-12" : "lg:right-6 xl:right-12"
                             )}
                         >
-                            {t("article.featured")}
+                            Featured
                         </ArticleLabel>
-                    )} */}
+                    )}
                     <div
                         className={twMerge("ml-auto hidden pl-2 text-xs text-gray600", isReversedLayout ? "lg:block" : "")}
                         {...inspectorProps({ fieldId: "publishedDate" })}
