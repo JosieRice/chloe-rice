@@ -1,5 +1,3 @@
-"use client";
-
 import { ArticleTile } from "@/components/features/article/ArticleTile";
 import { HTMLProps } from "react";
 import { twMerge } from "tailwind-merge";
