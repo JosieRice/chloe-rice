@@ -1,8 +1,7 @@
-import { ImageFieldsFragment } from "@src/lib/__generated/sdk";
 import NextImage, { ImageProps as NextImageProps } from "next/image";
 import { twMerge } from "tailwind-merge";
 
-interface ImageProps extends Omit<ImageFieldsFragment, "__typename"> {
+interface ImageProps extends Omit<any, "__typename"> {
     nextImageProps?: Omit<NextImageProps, "alt" | "src">;
 }
 
