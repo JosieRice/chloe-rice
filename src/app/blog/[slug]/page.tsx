@@ -1,16 +1,31 @@
-import { getPost } from "@/lib/api-graphql";
-import { draftMode } from "next/headers";
-
-import PostLayout from "./post-layout";
+import { ArticleContent } from "@/components/features/article/ArticleContent";
+import { ArticleHero } from "@/components/features/article/ArticleHero";
+import { ArticleTileGrid } from "@/components/features/article/ArticleTileGrid";
+import { Container } from "@/components/shared/Container";
+import { getBlogPost } from "@/lib/api-graphql";
 
 export default async function Post({ params }: { params: { slug: string } }) {
-    const { isEnabled } = draftMode();
-
-    const { post } = await getPost(params.slug, isEnabled);
+    const post = await getBlogPost(params.slug);
+    const relatedPosts = post?.relatedBlogPostsCollection?.items;
 
     if (!post) {
         return <h1>Post &quot;{params.slug}&quot; not found</h1>;
     }
 
-    return <PostLayout post={post} />;
+    return (
+        <>
+            <Container>
+                <ArticleHero article={post} isFeatured={false} isReversedLayout={true} />
+            </Container>
+            <Container className="mt-8 max-w-4xl">
+                <ArticleContent article={post} />
+            </Container>
+            {relatedPosts && (
+                <Container className="mt-8 max-w-5xl">
+                    <h2 className="mb-4 md:mb-6">Related articles</h2>
+                    <ArticleTileGrid articles={relatedPosts} className="md:grid-cols-2" />
+                </Container>
+            )}
+        </>
+    );
 }
