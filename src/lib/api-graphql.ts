@@ -1,40 +1,108 @@
-interface Sys {
-    id: string;
-}
-
-export interface Post {
-    __typename: string;
-    description: {
-        json: any;
-    };
-    slug: string;
-    sys: Sys;
-    title: string;
-}
-
-interface PostCollection {
-    items: Post[];
-}
-
-interface FetchResponse {
-    data?: {
-        postCollection?: PostCollection;
-    };
-}
-
-const POST_GRAPHQL_FIELDS = `
-  __typename
-  sys {
-    id
-  }
-  slug
-  title
-  description {
-    json
-  }
+const IMAGE_FIELDS = `
+    __typename
+    sys {
+        id
+    }
+    title
+    description
+    width
+    height
+    url
+    contentType
 `;
 
-async function fetchGraphQL(query: string, draftMode = false): Promise<FetchResponse> {
+const AUTHOR_FIELDS = `
+    __typename
+    sys {
+        id
+    }
+    name
+    avatar {
+        ${IMAGE_FIELDS}
+    }
+`;
+
+// TODO: images in blog posts not showing up
+const RICH_IMAGE_FIELDS = `
+    __typename
+    sys {
+        id
+    }
+`;
+// internalName
+// image {
+//     ${IMAGE_FIELDS}
+// }
+// caption
+// fullWidth
+
+const REFERENCE_PAGE_BLOG_POST_FIELDS = `
+    __typename
+    sys {
+        id
+        spaceId
+    }
+    slug
+    author {
+        ${AUTHOR_FIELDS}
+    }
+    publishedDate
+    title
+    shortDescription
+    featuredImage {
+        ${IMAGE_FIELDS}
+    }
+`;
+
+const PAGE_BLOG_POST_FIELDS = `
+    __typename
+    sys {
+        id
+        spaceId
+    }
+    internalName
+    seoFields {
+        __typename
+        pageTitle
+        pageDescription
+        canonicalUrl
+        nofollow
+        noindex
+        shareImagesCollection(limit: 3, locale: "en-US") {
+          items {
+            ${IMAGE_FIELDS}
+          }
+        }
+    }
+    slug
+    author {
+        ${AUTHOR_FIELDS}
+    }
+    publishedDate
+    title
+    shortDescription
+    featuredImage {
+        ${IMAGE_FIELDS}
+    }
+    content {
+        json
+        links {
+            entries {
+                block {
+                    ${RICH_IMAGE_FIELDS}
+                }
+            }
+        }
+    }
+    relatedBlogPostsCollection(limit: 2) {
+        items {
+            ${REFERENCE_PAGE_BLOG_POST_FIELDS}
+        }
+    }
+    
+`;
+
+async function fetchGraphQL(query: string, draftMode = false): Promise<any> {
     return fetch(`https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`, {
         body: JSON.stringify({ query }),
         headers: {
@@ -45,67 +113,75 @@ async function fetchGraphQL(query: string, draftMode = false): Promise<FetchResp
     }).then((response) => response.json());
 }
 
-function extractPost(fetchResponse: FetchResponse): Post | undefined {
-    return fetchResponse?.data?.postCollection?.items?.[0];
+function extractBlogPost(fetchResponse: any): any | undefined {
+    return fetchResponse?.data?.pageBlogPostCollection?.items?.[0];
 }
 
-function extractPostEntries(fetchResponse: FetchResponse): Post[] | undefined {
-    return fetchResponse?.data?.postCollection?.items;
+function extractPostEntries(fetchResponse: any): any[] | undefined {
+    return fetchResponse?.data?.pageBlogPostCollection?.items;
 }
 
-export async function getPreviewPostBySlug(slug: string): Promise<Post | undefined> {
+export async function getAllBlogPostsForHome(): Promise<any[] | undefined> {
+    const entries = await fetchGraphQL(
+        `query {
+            pageBlogPostCollection(limit: 6, locale: "en-US") {
+                items {
+                    ${PAGE_BLOG_POST_FIELDS}
+                }
+            }
+        }`
+    );
+
+    return extractPostEntries(entries);
+}
+
+export async function getBlogPost(slug: string): Promise<any> {
     const entry = await fetchGraphQL(
         `query {
-            postCollection(where: { slug: "${slug}" }, preview: true, limit: 1) {
+            pageBlogPostCollection(where: { slug: "${slug}" }, locale: "en-US") {
                 items {
-                    ${POST_GRAPHQL_FIELDS}
+                    ${PAGE_BLOG_POST_FIELDS}
+                }
+            }
+        }`
+    );
+
+    return extractBlogPost(entry);
+}
+
+export async function getFeaturedBlogPostForHome() {
+    const entry = await fetchGraphQL(
+        `query {
+            pageLandingCollection(preview: true, limit: 1, locale: "en-US") {
+                items {
+                    __typename
+                    sys {
+                        id
+                        spaceId
+                    }
+                    internalName
+                    featuredBlogPost {
+                        __typename
+                        sys {
+                            id
+                            spaceId
+                        }
+                        slug
+                        author {
+                            ${AUTHOR_FIELDS}
+                        }
+                        publishedDate
+                        title
+                        shortDescription
+                        featuredImage {
+                            ${IMAGE_FIELDS}
+                        }
+                    }
                 }
             }
         }`,
         true
     );
-    return extractPost(entry);
-}
 
-export async function getAllPostsWithSlug(): Promise<Post[] | undefined> {
-    const entries = await fetchGraphQL(
-        `query {
-            postCollection(where: { slug_exists: true }) {
-                items {
-                    ${POST_GRAPHQL_FIELDS}
-                }
-            }
-        }`
-    );
-    return extractPostEntries(entries);
-}
-
-export async function getAllPostsForHome(draftMode: boolean): Promise<Post[] | undefined> {
-    const entries = await fetchGraphQL(
-        `query {
-            postCollection(preview: ${draftMode ? "true" : "false"}) {
-                items {
-                    ${POST_GRAPHQL_FIELDS}
-                }
-            }
-        }`,
-        draftMode
-    );
-    return extractPostEntries(entries);
-}
-
-export async function getPost(slug: string, draftMode: boolean): Promise<{ post: Post | undefined }> {
-    const entry = await fetchGraphQL(
-        `query {
-            postCollection(where: { slug: "${slug}" }, preview: ${draftMode ? "true" : "false"}, limit: 1) {
-                items {
-                    ${POST_GRAPHQL_FIELDS}
-                }
-            }
-        }`,
-        draftMode
-    );
-    return {
-        post: extractPost(entry),
-    };
+    return entry.data.pageLandingCollection.items[0];
 }

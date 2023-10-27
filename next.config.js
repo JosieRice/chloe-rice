@@ -20,6 +20,9 @@ const nextConfig = {
             },
         ];
     },
+    images: {
+        domains: ["images.ctfassets.net", "images.eu.ctfassets.net"],
+    },
 };
 
 module.exports = nextConfig;

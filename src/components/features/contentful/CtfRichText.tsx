@@ -1,9 +1,8 @@
-import { ArticleImage } from "@/components/features/articles/ArticleImage";
+import { ArticleImage } from "@/components/features/article/ArticleImage";
 import { Options, documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, Document } from "@contentful/rich-text-types";
-import { ComponentRichImage } from "@src/lib/__generated/sdk";
 
-export type EmbeddedEntryType = ComponentRichImage | null;
+export type EmbeddedEntryType = any | null;
 
 export interface ContentfulRichTextInterface {
     json: Document;
@@ -39,27 +38,6 @@ export const contentfulBaseRichTextOptions = ({ links }: ContentfulRichTextInter
 
 export const CtfRichText = ({ json, links }: ContentfulRichTextInterface) => {
     const baseOptions = contentfulBaseRichTextOptions({ json, links });
-
-    console.log(json);
-
-    const document = {
-        content: [
-            {
-                content: [
-                    {
-                        data: {},
-                        marks: [],
-                        nodeType: "text",
-                        value: "Hello world!",
-                    },
-                ],
-                data: {},
-                nodeType: "paragraph",
-            },
-        ],
-        data: {},
-        nodeType: "document",
-    };
 
     return <article className="prose prose-sm max-w-none">{documentToReactComponents(json, baseOptions)}</article>;
 };
