@@ -1,5 +1,4 @@
 import { CtfImage } from "@/components/features/contentful/CtfImage";
-import { useContentfulInspectorMode } from "@contentful/live-preview/react";
 import { twMerge } from "tailwind-merge";
 
 interface ArticleImageProps {
@@ -7,10 +6,9 @@ interface ArticleImageProps {
 }
 
 export const ArticleImage = ({ image }: ArticleImageProps) => {
-    const inspectorProps = useContentfulInspectorMode({ entryId: image.sys.id });
     return image.image ? (
         <figure>
-            <div className="flex justify-center" {...inspectorProps({ fieldId: "image" })}>
+            <div className="flex justify-center">
                 <CtfImage
                     nextImageProps={{
                         className: twMerge(
@@ -21,11 +19,7 @@ export const ArticleImage = ({ image }: ArticleImageProps) => {
                     {...image.image}
                 />
             </div>
-            {image.caption && (
-                <figcaption className="mt-4" {...inspectorProps({ fieldId: "caption" })}>
-                    {image.caption}
-                </figcaption>
-            )}
+            {image.caption && <figcaption className="mt-4">{image.caption}</figcaption>}
         </figure>
     ) : null;
 };
