@@ -33,20 +33,12 @@ export const contentfulBaseRichTextOptions = ({ links }: ContentfulRichTextInter
 
             return <EmbeddedEntry {...entry} />;
         },
+        [BLOCKS.PARAGRAPH]: (node, children) => <p className="mb-8">{children}</p>,
     },
 });
 
 export const CtfRichText = ({ json, links }: ContentfulRichTextInterface) => {
     const baseOptions = contentfulBaseRichTextOptions({ json, links });
 
-    return (
-        <article className="prose prose-sm max-w-none">
-            {documentToReactComponents(json, {
-                ...baseOptions,
-                renderNode: {
-                    [BLOCKS.PARAGRAPH]: (node, children) => <p className="mb-8">{children}</p>,
-                },
-            })}
-        </article>
-    );
+    return <article className="prose prose-sm max-w-none">{documentToReactComponents(json, baseOptions)}</article>;
 };
