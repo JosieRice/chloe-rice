@@ -121,6 +121,10 @@ function extractPostEntries(fetchResponse: any): any[] | undefined {
     return fetchResponse?.data?.pageBlogPostCollection?.items;
 }
 
+function extractLanding(fetchResponse: any): any {
+    return fetchResponse?.data?.pageLandingCollection?.items?.[0];
+}
+
 export async function getAllBlogPostsForHome(): Promise<any[] | undefined> {
     const entries = await fetchGraphQL(
         `query {
@@ -149,7 +153,7 @@ export async function getBlogPost(slug: string): Promise<any> {
     return extractBlogPost(entry);
 }
 
-export async function getFeaturedBlogPostForHome() {
+export async function getLanding() {
     const entry = await fetchGraphQL(
         `query {
             pageLandingCollection(preview: true, limit: 1, locale: "en-US") {
@@ -183,5 +187,5 @@ export async function getFeaturedBlogPostForHome() {
         true
     );
 
-    return entry.data.pageLandingCollection.items[0];
+    return extractLanding(entry);
 }

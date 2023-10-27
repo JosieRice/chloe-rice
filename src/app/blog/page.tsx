@@ -1,7 +1,7 @@
 import { ArticleHero } from "@/components/features/article/ArticleHero";
 import { ArticleTileGrid } from "@/components/features/article/ArticleTileGrid";
 import { Container } from "@/components/shared/Container";
-import { getAllBlogPostsForHome, getFeaturedBlogPostForHome } from "@/lib/api-graphql";
+import { getAllBlogPostsForHome, getLanding } from "@/lib/api-graphql";
 import { Metadata } from "next";
 import Link from "next/link";
 
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Blog() {
-    const page = await getFeaturedBlogPostForHome();
+    const landing = await getLanding();
     const posts = await getAllBlogPostsForHome();
 
     if (!posts || posts.length === 0) {
@@ -25,8 +25,8 @@ export default async function Blog() {
         <>
             <h1 className="text-center text-lg">Working out contentful with nextjs - these are not my articles</h1>
             <Container>
-                <Link href={`/blog/${page.featuredBlogPost.slug}`}>
-                    <ArticleHero article={page.featuredBlogPost} />
+                <Link href={`/blog/${landing.featuredBlogPost.slug}`}>
+                    <ArticleHero article={landing.featuredBlogPost} />
                 </Link>
             </Container>
             <Container className="my-8  md:mb-10 lg:mb-16">
