@@ -110,6 +110,10 @@ async function fetchGraphQL(query: string, draftMode = false): Promise<any> {
             "Content-Type": "application/json",
         },
         method: "POST",
+        next: {
+            // cache for 1 hours then revalidate
+            revalidate: 3600,
+        },
     }).then((response) => response.json());
 }
 
