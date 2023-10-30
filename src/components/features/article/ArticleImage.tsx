@@ -19,7 +19,7 @@ export const ArticleImage = ({ image }: ArticleImageProps) => {
                     {...image.image}
                 />
             </div>
-            {image.caption && <figcaption className="mt-4">{image.caption}</figcaption>}
+            {image.caption && <figcaption className="mt-4 mb-12 text-right italic text-sm">{image.caption}</figcaption>}
         </figure>
     ) : null;
 };
