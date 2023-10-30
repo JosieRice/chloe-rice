@@ -129,6 +129,10 @@ function extractLanding(fetchResponse: any): any {
     return fetchResponse?.data?.pageLandingCollection?.items?.[0];
 }
 
+function extractComponentRichImage(fetchResponse: any): any {
+    return fetchResponse?.data?.componentRichImage;
+}
+
 export async function getAllBlogPostsForHome(): Promise<any[] | undefined> {
     const entries = await fetchGraphQL(
         `query {
@@ -141,6 +145,25 @@ export async function getAllBlogPostsForHome(): Promise<any[] | undefined> {
     );
 
     return extractPostEntries(entries);
+}
+
+export async function getComponentRichImage(id: string) {
+    const entry = await fetchGraphQL(
+        `query {
+            componentRichImage (id: "${id}") {
+                fullWidth
+                caption
+                image {
+                    url
+                    width
+                    height
+                    title
+                  }
+            }
+        }`
+    );
+
+    return extractComponentRichImage(entry);
 }
 
 export async function getBlogPost(slug: string): Promise<any> {

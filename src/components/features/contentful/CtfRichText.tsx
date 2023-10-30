@@ -1,4 +1,5 @@
 import { ArticleImage } from "@/components/features/article/ArticleImage";
+import { getComponentRichImage } from "@/lib/api-graphql";
 import { Options, documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS, Document } from "@contentful/rich-text-types";
 
@@ -15,10 +16,11 @@ export interface ContentfulRichTextInterface {
         | any;
 }
 
-export const EmbeddedEntry = (entry: EmbeddedEntryType) => {
+export const EmbeddedEntry = async (entry: EmbeddedEntryType) => {
     switch (entry?.__typename) {
         case "ComponentRichImage":
-            return <ArticleImage image={entry} />;
+            const componentRichImage = await getComponentRichImage(entry.sys.id);
+            return <ArticleImage image={componentRichImage} />;
         default:
             return null;
     }
