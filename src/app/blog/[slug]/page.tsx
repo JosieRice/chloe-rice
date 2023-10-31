@@ -20,7 +20,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
             <Container className="mt-8 max-w-4xl">
                 <ArticleContent article={post} />
             </Container>
-            {relatedPosts && (
+            {relatedPosts.length > 0 && (
                 <Container className="mt-8 max-w-5xl">
                     <h2 className="text-center text-xl mt-16 mb-4 md:mb-6">Related articles</h2>
                     <ArticleTileGrid articles={relatedPosts} className="md:grid-cols-2" />

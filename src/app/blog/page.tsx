@@ -23,14 +23,13 @@ export default async function Blog() {
 
     return (
         <>
-            <h1 className="text-center text-lg">Working out contentful with nextjs - these are not my articles</h1>
             <Container>
                 <Link href={`/blog/${landing.featuredBlogPost.slug}`}>
                     <ArticleHero article={landing.featuredBlogPost} />
                 </Link>
             </Container>
             <Container className="my-8  md:mb-10 lg:mb-16">
-                <h2 className="mb-4 md:mb-6">Latest Articles</h2>
+                <h2 className="text-center text-xl mt-16 mb-4 md:mb-6">Latest articles</h2>
                 <ArticleTileGrid articles={posts} className="md:grid-cols-2 lg:grid-cols-3" />
             </Container>
         </>
