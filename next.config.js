@@ -1,8 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-        serverActions: true,
-    },
     async headers() {
         return [
             {
@@ -21,7 +18,20 @@ const nextConfig = {
         ];
     },
     images: {
-        domains: ["images.ctfassets.net", "images.eu.ctfassets.net"],
+        remotePatterns: [
+            {
+                hostname: "images.ctfassets.net",
+                pathname: "/**",
+                port: "",
+                protocol: "https",
+            },
+            {
+                hostname: "images.eu.ctfassets.net",
+                pathname: "/**",
+                port: "",
+                protocol: "https",
+            },
+        ],
     },
 };
 
