@@ -35,7 +35,9 @@ export const contentfulBaseRichTextOptions = ({ links }: ContentfulRichTextInter
 
             return <EmbeddedEntry {...entry} />;
         },
+        [BLOCKS.OL_LIST]: (node, children) => <ol className="list-decimal">{children}</ol>,
         [BLOCKS.PARAGRAPH]: (node, children) => <p className="mb-8">{children}</p>,
+        [BLOCKS.UL_LIST]: (node, children) => <ul className="list-disc">{children}</ul>,
     },
 });
 

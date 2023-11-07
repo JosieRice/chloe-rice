@@ -22,19 +22,12 @@ const AUTHOR_FIELDS = `
     }
 `;
 
-// TODO: images in blog posts not showing up
 const RICH_IMAGE_FIELDS = `
     __typename
     sys {
         id
     }
 `;
-// internalName
-// image {
-//     ${IMAGE_FIELDS}
-// }
-// caption
-// fullWidth
 
 const REFERENCE_PAGE_BLOG_POST_FIELDS = `
     __typename
