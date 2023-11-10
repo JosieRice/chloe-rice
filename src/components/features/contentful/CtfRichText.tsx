@@ -35,8 +35,9 @@ export const contentfulBaseRichTextOptions = ({ links }: ContentfulRichTextInter
 
             return <EmbeddedEntry {...entry} />;
         },
+        [BLOCKS.HEADING_2]: (node, children) => <h2 className="mb-8 text-lg">{children}</h2>,
         [BLOCKS.OL_LIST]: (node, children) => <ol className="list-decimal">{children}</ol>,
-        [BLOCKS.PARAGRAPH]: (node, children) => <p className="mb-8">{children}</p>,
+        [BLOCKS.PARAGRAPH]: (node, children) => <p className="mb-8 text-justify indent-8 text-base">{children}</p>,
         [BLOCKS.UL_LIST]: (node, children) => <ul className="list-disc">{children}</ul>,
     },
 });
