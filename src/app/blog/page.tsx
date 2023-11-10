@@ -28,7 +28,7 @@ export default async function Blog() {
                     <ArticleHero article={landing.featuredBlogPost} />
                 </Link>
             </Container>
-            <Container className="my-8  md:mb-10 lg:mb-16">
+            <Container className="my-8">
                 <h2 className="text-center text-xl mt-16 mb-4 md:mb-6">Latest articles</h2>
                 <ArticleTileGrid articles={posts} className="md:grid-cols-2 lg:grid-cols-3" />
             </Container>
