@@ -16,7 +16,7 @@ export function Hero() {
                 />
                 <div>
                     <h1 className="text-5xl font-bold">Chloë Rice</h1>
-                    <p className="py-6">Senior Front End Developer, on the road to becoming a Front End Architect.</p>
+                    <p className="py-6">Senior Frontend Engineer</p>
                     <div className="flex space-x-4">
                         <Link href="https://github.com/JosieRice" target="_blank">
                             {iconDictionary["personalGitHub"]}
