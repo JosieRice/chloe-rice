@@ -4,12 +4,13 @@ import { ArticleTileGrid } from "@/components/features/article/ArticleTileGrid";
 import { Container } from "@/components/shared/Container";
 import { getBlogPost } from "@/lib/api-graphql";
 
-export default async function Post({ params }: { params: { slug: string } }) {
-    const post = await getBlogPost(params.slug);
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = await getBlogPost(slug);
     const relatedPosts = post?.relatedBlogPostsCollection?.items;
 
     if (!post) {
-        return <h1>Post &quot;{params.slug}&quot; not found</h1>;
+        return <h1>Post &quot;{slug}&quot; not found</h1>;
     }
 
     return (

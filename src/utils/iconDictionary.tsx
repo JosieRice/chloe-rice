@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export type SVG =
     | "asana"
     | "axios"
@@ -39,7 +41,7 @@ export type SVG =
     | "webpack"
     | "zustand";
 
-export const iconDictionary: Record<SVG, JSX.Element> = {
+export const iconDictionary: Record<SVG, ReactNode> = {
     asana: (
         <svg fill="none" height={80} viewBox="0 0 36 35" width={80} xmlns="http://www.w3.org/2000/svg">
             <path
