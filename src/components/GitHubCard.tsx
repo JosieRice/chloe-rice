@@ -11,7 +11,7 @@ interface Props {
 
 export function GitHubCard({ createdAt, description, htmlUrl, language, name, privateBool }: Props) {
     return (
-        <a className="card w-96 bg-accent-content shadow-xl border-solid border-2 border-neutral" href={htmlUrl} target="_blank">
+        <a className="card w-96 bg-primary shadow-xl border-solid border-2 border-neutral" href={htmlUrl} target="_blank">
             <div className="card-body">
                 <div className="flex justify-between">
                     <div className="flex">

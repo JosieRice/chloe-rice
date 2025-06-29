@@ -25,9 +25,7 @@ export function Hero() {
                         <Link className="border-solid" href="https://www.linkedin.com/in/chloe-rice-tong/" target="_blank">
                             {iconDictionary["personalLinkedIn"]}
                         </Link>
-                        <Link href="https://resume.creddle.io/resume/4fr0uv30mww" target="_blank">
-                            {iconDictionary["personalResume"]}
-                        </Link>
+                        {/* <Link href="/resume">{iconDictionary["personalResume"]}</Link> */}
                         <Link href={"mailto:chloericetong@gmail.com"}>{iconDictionary["personalEmail"]}</Link>
                     </div>
                 </div>
